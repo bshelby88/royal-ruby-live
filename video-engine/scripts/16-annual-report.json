@@ -1,0 +1,13 @@
+{
+  "slug": "16-annual-report",
+  "duration": 30,
+  "bg_gradient": ["#0B0408", "#160810"],
+  "beats": [
+    { "t": 0.0,  "d": 5.0, "kicker": "FEDERAL LAW", "line": "You are entitled to a",       "accent": "free credit report." },
+    { "t": 5.0,  "d": 5.0, "kicker": "THE SOURCE",  "line": "AnnualCreditReport.com",       "accent": "is the only legal site." },
+    { "t": 10.0, "d": 5.0, "kicker": "WHY",         "line": "The bureaus must give it.",   "accent": "Every 12 months. Free." },
+    { "t": 15.0, "d": 5.0, "kicker": "NOT",         "line": "CreditKarma. Not Experian.",  "accent": "Not your bank." },
+    { "t": 20.0, "d": 5.0, "kicker": "PULL",        "line": "All three bureaus.",           "accent": "Same day. Every year." },
+    { "t": 25.0, "d": 5.0, "kicker": "FREE",        "line": "royalruby.co/tt",              "accent": "for what to do next." }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "12-data-shock",
+  "duration": 22,
+  "bg_gradient": ["#0B0408", "#1C0A10"],
+  "beats": [
+    { "t": 0.0,  "d": 3.0, "kicker": "REAL NUMBER", "line": "A 620 score pays",           "accent": "$76,000 more" },
+    { "t": 3.0,  "d": 3.0, "kicker": "ON WHAT",     "line": "on a $300K",                  "accent": "30-year mortgage." },
+    { "t": 6.0,  "d": 3.5, "kicker": "VS",          "line": "Than a 760 score.",           "accent": "Same house. Same loan." },
+    { "t": 9.5,  "d": 3.5, "kicker": "THAT'S",      "line": "$211 a month.",                "accent": "For 360 months." },
+    { "t": 13.0, "d": 3.0, "kicker": "WEALTH GAP",  "line": "isn't about income.",         "accent": "It's about capital cost." },
+    { "t": 16.0, "d": 3.0, "kicker": "FIX IT",      "line": "Start with your",              "accent": "three-bureau reports." },
+    { "t": 19.0, "d": 3.0, "kicker": "FREE",        "line": "royalruby.co/tt",              "accent": "" }
+  ]
+}

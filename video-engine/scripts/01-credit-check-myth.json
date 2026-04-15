@@ -1,0 +1,13 @@
+{
+  "slug": "01-credit-check-myth",
+  "duration": 26,
+  "bg_gradient": ["#0B0408", "#1C0A10"],
+  "beats": [
+    { "t": 0.0,  "d": 3.5, "kicker": "MYTH",        "line": "Checking your own credit",     "accent": "does NOT hurt your score." },
+    { "t": 3.5,  "d": 4.0, "kicker": "THE TRUTH",   "line": "A soft pull is",                "accent": "invisible to lenders." },
+    { "t": 7.5,  "d": 4.0, "kicker": "WHAT HURTS",  "line": "Hard pulls and high",           "accent": "utilization do." },
+    { "t": 11.5, "d": 4.5, "kicker": "THE MOVE",    "line": "Pull all three reports.",      "accent": "Read them with me." },
+    { "t": 16.0, "d": 5.0, "kicker": "FREE",        "line": "90-day reset checklist",       "accent": "royalruby.co/tt" },
+    { "t": 21.0, "d": 5.0, "kicker": "DR. MARIGNY", "line": "You can't build wealth",       "accent": "on a broken foundation." }
+  ]
+}

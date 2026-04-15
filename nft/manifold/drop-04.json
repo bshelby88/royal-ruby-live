@@ -1,0 +1,44 @@
+{
+  "contract": {
+    "type": "ERC1155Claim",
+    "name": "Ruby Wisdom Drops",
+    "symbol": "RWD",
+    "network": "base"
+  },
+  "token": {
+    "tokenId": 4,
+    "name": "The 30% Rule Is a Lie",
+    "description": "Utilization is 30% of your FICO and most people get the timing wrong. Here's what actually moves the score.",
+    "image": "ipfs://REPLACE_WITH_ART_CID/4.png",
+    "animation_url": "ipfs://REPLACE_WITH_VIDEO_CID/04-utilization.mp4",
+    "external_url": "https://royalruby.co/nft"
+  },
+  "claim": {
+    "type": "open",
+    "price": "0.0025",
+    "currency": "ETH",
+    "startDate": null,
+    "endDate": null,
+    "walletMax": 10,
+    "royaltyBps": 500
+  },
+  "unlockableContent": "**Statement-date tracker spreadsheet (Google Sheet template)**\n\nCopy: https://royalruby.co/unlock/04",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Wisdom Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#04"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    }
+  ]
+}

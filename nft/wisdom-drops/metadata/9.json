@@ -1,0 +1,33 @@
+{
+  "name": "Ruby Wisdom Drop #09 \u2014 Stewardship Is Spiritual",
+  "description": "The Bible talks about money more than faith and prayer combined \u2014 there's a reason. Stewardship is the test, not the trap. Unlockable: a one-page devotional on financial stewardship, plus the Luke 16:10 study guide.\n\nEducational content only.",
+  "image": "ipfs://REPLACE_WITH_THUMBNAIL_FOLDER_CID/09-faith-finance.png",
+  "animation_url": "ipfs://REPLACE_WITH_VIDEO_FOLDER_CID/09-faith-finance.mp4",
+  "external_url": "https://royalruby.co",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Wisdom Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#09"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Length",
+      "value": "Short-form"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    }
+  ]
+}

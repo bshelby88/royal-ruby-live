@@ -1,0 +1,14 @@
+{
+  "slug": "10-usb-cliffhanger",
+  "duration": 26,
+  "bg_gradient": ["#0B0408", "#1C0A10"],
+  "beats": [
+    { "t": 0.0,  "d": 4.0, "kicker": "4 DOCS",    "line": "Every family should have",      "accent": "these on one USB drive." },
+    { "t": 4.0,  "d": 4.0, "kicker": "DOC 01",    "line": "Your full three-bureau",       "accent": "credit report." },
+    { "t": 8.0,  "d": 4.0, "kicker": "DOC 02",    "line": "A written dispute",             "accent": "letter template." },
+    { "t": 12.0, "d": 4.0, "kicker": "DOC 03",    "line": "A one-page budget",              "accent": "that actually fits." },
+    { "t": 16.0, "d": 4.0, "kicker": "DOC 04",    "line": "A debt payoff plan —",           "accent": "by INTEREST, not balance." },
+    { "t": 20.0, "d": 3.0, "kicker": "THE BUNDLE","line": "That's the Ruby Starter Pack.", "accent": "" },
+    { "t": 23.0, "d": 3.0, "kicker": "FREE FIRST","line": "Checklist in bio →",             "accent": "royalruby.co/tt" }
+  ]
+}

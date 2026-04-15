@@ -1,0 +1,13 @@
+{
+  "slug": "23-three-cards",
+  "duration": 30,
+  "bg_gradient": ["#0B0408", "#160810"],
+  "beats": [
+    { "t": 0.0,  "d": 5.0, "kicker": "RULE",     "line": "Three cards is the",          "accent": "minimum. Not maximum." },
+    { "t": 5.0,  "d": 5.0, "kicker": "WHY",      "line": "Utilization is averaged",     "accent": "across all your cards." },
+    { "t": 10.0, "d": 5.0, "kicker": "MATH",     "line": "One card at 90% full",         "accent": "looks like panic." },
+    { "t": 15.0, "d": 5.0, "kicker": "BUT",      "line": "Three cards at 30% each",      "accent": "looks like a spreadsheet." },
+    { "t": 20.0, "d": 5.0, "kicker": "CREDIT MIX","line": "Also helps the",              "accent": "10% mix factor." },
+    { "t": 25.0, "d": 5.0, "kicker": "THE PLAN", "line": "Which 3 cards →",               "accent": "royalruby.co/tt" }
+  ]
+}

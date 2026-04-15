@@ -1,0 +1,14 @@
+{
+  "slug": "15-nft-drop",
+  "duration": 24,
+  "bg_gradient": ["#0B0408", "#1C0A10"],
+  "beats": [
+    { "t": 0.0,  "d": 3.5, "kicker": "NEW",         "line": "For the first time,",           "accent": "credit wisdom onchain." },
+    { "t": 3.5,  "d": 3.5, "kicker": "TEN DROPS",   "line": "Each one is a",                  "accent": "single truth." },
+    { "t": 7.0,  "d": 3.5, "kicker": "ON BASE",     "line": "0.0025 ETH",                      "accent": "open edition." },
+    { "t": 10.5, "d": 3.5, "kicker": "UNLOCKABLE",  "line": "Scripts. Worksheets.",           "accent": "Printables." },
+    { "t": 14.0, "d": 3.5, "kicker": "HOLDERS",     "line": "Get the flagship",               "accent": "Dispute Vault Pass first." },
+    { "t": 17.5, "d": 3.5, "kicker": "TOMORROW",    "line": "Drop #01 goes live.",           "accent": "" },
+    { "t": 21.0, "d": 3.0, "kicker": "LINK",        "line": "royalruby.co/nft",              "accent": "" }
+  ]
+}

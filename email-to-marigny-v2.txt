@@ -1,0 +1,29 @@
+From: jadedfocus@gmail.com
+To: marignyherman@gmail.com
+Subject: Royal Ruby v2 is live
+
+Dr. Marigny,
+
+Quick update — Kava and I deployed the upgraded version of the landing page tonight. Same editorial vibe you liked, but now with the full stack behind it:
+
+  https://royal-ruby-theta.vercel.app
+
+What's new since what you saw yesterday:
+
+1. It's on the public internet now (not just a local preview) — you can share this URL with anyone, on any device, and it loads in under half a second anywhere in the world.
+
+2. The form is wired to a real email-capture backend. Every signup lands in our Formspree inbox and redirects the user to a thank-you page with the full checklist. End-to-end works.
+
+3. Contact email is jadedfocus@gmail.com across the site (privacy, terms, contact, waitlist CTAs). When we get the royalruby.co domain and Google Workspace set up, we'll swap it to hello@royalruby.co in one command.
+
+4. I fixed the waitlist button on the Ruby Starter Pack — clicking it now opens a prefilled email asking to join the waitlist. We can invoice interested buyers manually until real Stripe is set up under the LLC.
+
+Next up on my side: I activated the automation stack we built. Every morning at 7am, the content engine now generates fresh TikTok scripts, captions, and a 14-day calendar automatically. Every Monday 6am, it regenerates the weekly email sequences. You'll have an infinite content bank on tap — just open the file and record.
+
+I also stood up Tiffany as an automation coordinator watching all of it. Her job is to catch every new piece of content as it's generated and get it where it needs to go.
+
+Your move this week: one TikTok pointing to the URL. Let's see who signs up.
+
+Talk soon.
+
+— Bryant

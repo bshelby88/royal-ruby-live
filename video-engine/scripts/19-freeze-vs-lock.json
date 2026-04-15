@@ -1,0 +1,13 @@
+{
+  "slug": "19-freeze-vs-lock",
+  "duration": 30,
+  "bg_gradient": ["#0B0408", "#160810"],
+  "beats": [
+    { "t": 0.0,  "d": 5.0, "kicker": "CONFUSION", "line": "Credit freeze or",              "accent": "credit lock?" },
+    { "t": 5.0,  "d": 5.0, "kicker": "FREEZE",    "line": "Federal law. Free.",             "accent": "Legally binding." },
+    { "t": 10.0, "d": 5.0, "kicker": "LOCK",      "line": "Private product.",               "accent": "Not free. Not binding." },
+    { "t": 15.0, "d": 5.0, "kicker": "WHICH",     "line": "Pick freeze.",                    "accent": "Always freeze." },
+    { "t": 20.0, "d": 5.0, "kicker": "HOW",       "line": "15 minutes.",                     "accent": "Three bureau websites." },
+    { "t": 25.0, "d": 5.0, "kicker": "WALK",      "line": "The walkthrough is free →",      "accent": "royalruby.co/tt" }
+  ]
+}

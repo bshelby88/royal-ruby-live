@@ -1,0 +1,14 @@
+{
+  "slug": "14-one-move",
+  "duration": 24,
+  "bg_gradient": ["#0B0408", "#1C0A10"],
+  "beats": [
+    { "t": 0.0,  "d": 3.5, "kicker": "IF YOU",     "line": "only make one move",           "accent": "this year," },
+    { "t": 3.5,  "d": 3.5, "kicker": "MAKE IT",    "line": "this one:",                     "accent": "automation." },
+    { "t": 7.0,  "d": 3.5, "kicker": "RULE 01",    "line": "Every bill on",                "accent": "autopay minimum." },
+    { "t": 10.5, "d": 3.5, "kicker": "RULE 02",    "line": "One card on",                   "accent": "a small recurring charge." },
+    { "t": 14.0, "d": 3.5, "kicker": "RULE 03",    "line": "Statement alerts",              "accent": "on every card." },
+    { "t": 17.5, "d": 3.5, "kicker": "WHY",        "line": "Missed payments drop",          "accent": "your score 80 points." },
+    { "t": 21.0, "d": 3.0, "kicker": "CHECKLIST",  "line": "royalruby.co/tt",                "accent": "" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "21-fico-breakdown",
+  "duration": 30,
+  "bg_gradient": ["#0B0408", "#160810"],
+  "beats": [
+    { "t": 0.0,  "d": 5.0, "kicker": "YOUR SCORE", "line": "is five numbers",              "accent": "in a trench coat." },
+    { "t": 5.0,  "d": 5.0, "kicker": "35%",        "line": "Payment history",                "accent": "— the biggest." },
+    { "t": 10.0, "d": 5.0, "kicker": "30%",        "line": "Utilization",                    "accent": "— the fastest to fix." },
+    { "t": 15.0, "d": 5.0, "kicker": "15%",        "line": "Length of history",              "accent": "— time doesn't rush." },
+    { "t": 20.0, "d": 5.0, "kicker": "10% / 10%",  "line": "New credit + mix",               "accent": "— the minor tweaks." },
+    { "t": 25.0, "d": 5.0, "kicker": "PLAYBOOK",   "line": "How to hit each →",             "accent": "royalruby.co/tt" }
+  ]
+}

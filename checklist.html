@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The 5-Page Credit Reset Checklist — Royal Ruby</title>
+  <meta name="description" content="The 90-day credit reset checklist by Dr. Herman Marigny III." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script defer src="/payments.js"></script>
+  <script defer src="/affiliates.js"></script>
+  <style>
+    :root {
+      --ruby: #9B1B30;
+      --ruby-deep: #6E0F1F;
+      --ivory: #F8F4E9;
+      --charcoal: #1C1C1C;
+      --gold: #C9A449;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", -apple-system, sans-serif;
+      background: var(--ivory);
+      color: var(--charcoal);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+    header {
+      padding: 1.75rem 0;
+      border-bottom: 1px solid rgba(28,28,28,0.08);
+      margin-bottom: 3rem;
+    }
+    header .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--ruby);
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+    header .logo span { color: var(--gold); font-style: italic; }
+    .cover {
+      text-align: center;
+      padding: 2rem 0 3rem;
+      border-bottom: 1px solid rgba(28,28,28,0.08);
+      margin-bottom: 3rem;
+    }
+    .cover .eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ruby);
+      padding: 0.4rem 1rem;
+      border: 1px solid var(--ruby);
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.25rem, 1rem + 4vw, 3.75rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      color: rgba(28,28,28,0.7);
+      max-width: 40ch;
+      margin: 0 auto 1.5rem;
+    }
+    .byline {
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(28,28,28,0.55);
+      font-weight: 500;
+    }
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-top: 3rem;
+      margin-bottom: 0.5rem;
+      color: var(--charcoal);
+    }
+    h2 .num {
+      display: block;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ruby);
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      margin-bottom: 0.5rem;
+    }
+    .intro {
+      color: rgba(28,28,28,0.75);
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+    }
+    ul.check {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
+    }
+    ul.check li {
+      padding: 0.85rem 0 0.85rem 2rem;
+      position: relative;
+      border-bottom: 1px solid rgba(28,28,28,0.07);
+      font-size: 1rem;
+      color: rgba(28,28,28,0.85);
+    }
+    ul.check li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 1.1rem;
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--ruby);
+      border-radius: 3px;
+    }
+    .callout {
+      background: var(--charcoal);
+      color: var(--ivory);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+      border-left: 3px solid var(--gold);
+    }
+    .callout strong { color: var(--gold); font-weight: 600; }
+    .callout p { margin: 0; font-size: 0.98rem; line-height: 1.6; }
+    .week-plan {
+      background: rgba(155,27,48,0.06);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+    .week-plan strong {
+      font-family: "Playfair Display", serif;
+      font-size: 1rem;
+      color: var(--ruby);
+      display: inline-block;
+      min-width: 6rem;
+    }
+    .week-plan p { margin: 0.25rem 0; }
+
+    .outro {
+      margin-top: 4rem;
+      padding: 3rem 2rem;
+      background: var(--charcoal);
+      color: var(--ivory);
+      border-radius: 4px;
+      text-align: center;
+    }
+    .outro h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+      font-weight: 800;
+    }
+    .outro p { opacity: 0.75; margin-bottom: 1.5rem; }
+    .outro a {
+      display: inline-block;
+      background: var(--ruby);
+      color: var(--ivory);
+      padding: 1rem 1.75rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: background 200ms;
+    }
+    .outro a:hover { background: var(--ruby-deep); }
+
+    .disclaimer {
+      font-size: 0.75rem;
+      color: rgba(28,28,28,0.5);
+      margin-top: 3rem;
+      padding: 1.5rem 0;
+      border-top: 1px solid rgba(28,28,28,0.08);
+      line-height: 1.6;
+    }
+    footer {
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.78rem;
+      color: rgba(28,28,28,0.5);
+    }
+
+    @media print {
+      header, .outro a { display: none; }
+      body { background: white; }
+      .callout { background: #1C1C1C !important; -webkit-print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="/" class="logo">Royal<span>Ruby</span></a>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="cover">
+    <span class="eyebrow">The 5-Page Checklist</span>
+    <h1>The Royal Ruby<br/>Credit Reset Checklist</h1>
+    <p class="subtitle">A 90-day reset to take control of your credit — without gurus, gimmicks, or $997 courses.</p>
+    <div class="byline">By Dr. Herman Marigny III &amp; the Royal Ruby Team</div>
+  </section>
+
+  <section>
+    <h2><span class="num">Page 01</span>Know Your Starting Line</h2>
+    <p class="intro">You can't fix what you can't see. Before you change one thing, you need the truth.</p>
+    <ul class="check">
+      <li>Pull all three credit reports free at <strong>AnnualCreditReport.com</strong> (Equifax, Experian, TransUnion)</li>
+      <li>Get your real FICO score (not VantageScore) — Experian.com offers it free</li>
+      <li>Screenshot or save a PDF of each report — this is your Day 0 baseline</li>
+      <li>Write down three numbers in a notebook: Current FICO score, Total revolving debt, Number of negative items</li>
+    </ul>
+    <div class="callout"><p><strong>Why this matters:</strong> Most people guess at their credit. Guessing costs you thousands in interest. Knowing costs you nothing.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="num">Page 02</span>The Dispute Sweep</h2>
+    <p class="intro">Credit bureaus legally have 30 days to verify disputed items. If they can't, it comes off.</p>
+    <ul class="check">
+      <li>Highlight every account on every report</li>
+      <li>Mark anything that's inaccurate, outdated (7+ years), unfamiliar, or paid but still showing a balance</li>
+      <li>Dispute online through each bureau's portal OR mail certified letters (stronger paper trail)</li>
+      <li>Track every dispute in a spreadsheet: date sent, item, bureau, expected response date</li>
+      <li>Follow up at day 31 if no response — this is your leverage</li>
+    </ul>
+    <div class="callout"><p><strong>Royal Ruby tip:</strong> One clean dispute round can move a score 20–60 points in 30 days. We've seen it in our community.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="num">Page 03</span>Crush Utilization</h2>
+    <p class="intro">Credit utilization is 30% of your FICO score. This is the fastest legal lever you have.</p>
+    <ul class="check">
+      <li>Calculate your current utilization: (total card balances) ÷ (total limits) × 100</li>
+      <li>Target: under 30%. Elite target: under 10%</li>
+      <li>Pay down the card with the highest utilization ratio first — not highest balance, ratio</li>
+      <li>Request credit limit increases on cards you've had for 6+ months (no hard pull if you ask online)</li>
+      <li>Pay before the statement closes, not just before the due date — that's when utilization reports</li>
+    </ul>
+    <div class="callout"><p><strong>Why this works:</strong> Utilization resets every month. You can see score movement in 30 days without paying off debt entirely.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="num">Page 04</span>Build Positive History</h2>
+    <p class="intro">Disputing removes damage. This step adds fuel.</p>
+    <ul class="check">
+      <li>Become an authorized user on a family member's oldest, cleanest credit card</li>
+      <li>Open a secured credit card if you have no active accounts — Capital One, Discover, or Self</li>
+      <li>Set up autopay for one small recurring bill (Netflix, phone) on the new card</li>
+      <li>Pay it off in full every month — never carry a balance</li>
+      <li>Add rent reporting through Experian Boost or RentTrack if you rent</li>
+    </ul>
+    <div class="callout"><p><strong>Real talk:</strong> You don't need 10 cards. You need 2–3 accounts reporting on time, every month, for 24+ months. That's what builds wealth.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="num">Page 05</span>The 90-Day System</h2>
+    <p class="intro">Reset isn't a weekend. It's 90 days of small, consistent moves.</p>
+
+    <div class="week-plan">
+      <p><strong>Week 1–2:</strong> Pages 1 &amp; 2 — pull reports, start disputes</p>
+      <p><strong>Week 3–4:</strong> Page 3 — utilization attack plan</p>
+      <p><strong>Week 5–8:</strong> Follow up on disputes, open new positive account</p>
+      <p><strong>Week 9–12:</strong> Review new reports, measure score movement, set next 90-day goal</p>
+    </div>
+
+    <ul class="check">
+      <li>Put a recurring calendar reminder every Sunday: "Credit check-in — 10 minutes"</li>
+      <li>Celebrate small wins — 10 points is a win</li>
+      <li>Don't check daily. Check monthly. Obsession isn't strategy</li>
+    </ul>
+  </section>
+
+  <section class="outro">
+    <h3>Ready to go deeper?</h3>
+    <p>The Ruby Starter Pack bundles this checklist with the full 90-day reset toolkit — budget builder, debt destroyer, and dispute letter templates. Dropping soon — join the waitlist and we'll email you the moment it's live.</p>
+    <a href="mailto:jadedfocus@gmail.com?subject=Ruby%20Starter%20Pack%20waitlist" data-buy="ruby-starter-pack">Join the Starter Pack waitlist</a>
+  </section>
+
+  <p class="disclaimer">
+    This guide is educational and not legal or financial advice. Royal Ruby is not a credit repair company. You have the right to dispute inaccurate information on your credit reports for free under the Fair Credit Reporting Act (15 USC §1681i). If you need formal credit repair services, consult a HUD-approved housing counseling agency or a licensed attorney.
+  </p>
+</div>
+
+<footer>
+  <div class="wrap">
+    © 2026 Royal Ruby LLC · Unlock your credit. Build real wealth.
+  </div>
+</footer>
+
+</body>
+</html>

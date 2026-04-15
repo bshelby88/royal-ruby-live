@@ -1,0 +1,13 @@
+{
+  "slug": "18-authorized-user",
+  "duration": 30,
+  "bg_gradient": ["#0B0408", "#160810"],
+  "beats": [
+    { "t": 0.0,  "d": 5.0, "kicker": "QUIET MOVE","line": "Get added as an authorized",  "accent": "user on a family card." },
+    { "t": 5.0,  "d": 5.0, "kicker": "WHAT",     "line": "Their history",                   "accent": "appears on your report." },
+    { "t": 10.0, "d": 5.0, "kicker": "REQUIRE",  "line": "Long history.",                   "accent": "High limit. Low balance." },
+    { "t": 15.0, "d": 5.0, "kicker": "YOUR JOB", "line": "Don't touch the card.",            "accent": "Ever." },
+    { "t": 20.0, "d": 5.0, "kicker": "LIFT",     "line": "Score can move",                   "accent": "30 to 80 points in 60 days." },
+    { "t": 25.0, "d": 5.0, "kicker": "CHECKLIST","line": "royalruby.co/tt",                  "accent": "The rules are there." }
+  ]
+}

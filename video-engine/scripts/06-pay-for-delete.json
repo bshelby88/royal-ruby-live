@@ -1,0 +1,13 @@
+{
+  "slug": "06-pay-for-delete",
+  "duration": 24,
+  "bg_gradient": ["#0B0408", "#1C0A10"],
+  "beats": [
+    { "t": 0.0,  "d": 4.0, "kicker": "STOP",       "line": "Don't pay collection agencies", "accent": "to 'delete' accounts." },
+    { "t": 4.0,  "d": 4.0, "kicker": "THE GAME",   "line": "They can't legally",             "accent": "promise that." },
+    { "t": 8.0,  "d": 4.0, "kicker": "TRUTH",      "line": "A paid collection still sits",   "accent": "for seven years." },
+    { "t": 12.0, "d": 4.0, "kicker": "THE MOVE",   "line": "Dispute the inaccurate ones.",  "accent": "Let the clock run on the rest." },
+    { "t": 16.0, "d": 3.5, "kicker": "NOT SHAMEFUL","line": "This is an invitation.",       "accent": "Start where you are." },
+    { "t": 19.5, "d": 4.5, "kicker": "FREE",       "line": "Full playbook →",                "accent": "royalruby.co/tt" }
+  ]
+}

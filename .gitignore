@@ -1,0 +1,11 @@
+.vercel
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.local
+.env.*.local
+node_modules/
+payments.generated.js
+# Note: videos are kept in git for now — uncomment below if the repo gets heavy
+# videos/*.mp4

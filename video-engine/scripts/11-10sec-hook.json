@@ -1,0 +1,12 @@
+{
+  "slug": "11-10sec-hook",
+  "duration": 12,
+  "bg_gradient": ["#0B0408", "#1C0A10"],
+  "beats": [
+    { "t": 0.0, "d": 2.5, "kicker": "10 SECONDS", "line": "Your credit score",          "accent": "is a spreadsheet." },
+    { "t": 2.5, "d": 2.5, "kicker": "FACT",       "line": "Spreadsheets",                "accent": "have typos." },
+    { "t": 5.0, "d": 2.5, "kicker": "FTC",        "line": "1 in 5 reports",              "accent": "has a material error." },
+    { "t": 7.5, "d": 2.5, "kicker": "YOU",        "line": "can force them to",           "accent": "delete it." },
+    { "t": 10.0,"d": 2.0, "kicker": "FREE",       "line": "royalruby.co/tt",              "accent": "" }
+  ]
+}

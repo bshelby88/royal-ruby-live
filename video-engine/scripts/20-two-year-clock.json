@@ -1,0 +1,13 @@
+{
+  "slug": "20-two-year-clock",
+  "duration": 30,
+  "bg_gradient": ["#0B0408", "#160810"],
+  "beats": [
+    { "t": 0.0,  "d": 5.0, "kicker": "HARD PULLS", "line": "Every credit application",    "accent": "dings your score." },
+    { "t": 5.0,  "d": 5.0, "kicker": "BUT",        "line": "They only count",               "accent": "for 12 months." },
+    { "t": 10.0, "d": 5.0, "kicker": "AND",        "line": "They age off completely",       "accent": "after 24 months." },
+    { "t": 15.0, "d": 5.0, "kicker": "MEANING",    "line": "Every shopping spree",          "accent": "has an expiration date." },
+    { "t": 20.0, "d": 5.0, "kicker": "PLAN",       "line": "Apply in clusters.",             "accent": "Then go quiet." },
+    { "t": 25.0, "d": 5.0, "kicker": "DETAIL",     "line": "Full rules →",                   "accent": "royalruby.co/tt" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "05-single-mom",
+  "duration": 26,
+  "bg_gradient": ["#0B0408", "#1C0A10"],
+  "beats": [
+    { "t": 0.0,  "d": 4.0, "kicker": "TO YOU",       "line": "To the single mom",          "accent": "watching at midnight —" },
+    { "t": 4.0,  "d": 4.0, "kicker": "THE TRUTH",    "line": "You're not behind.",         "accent": "You're under-equipped." },
+    { "t": 8.0,  "d": 4.0, "kicker": "WEALTH",       "line": "Isn't a hustle.",            "accent": "It's a system." },
+    { "t": 12.0, "d": 4.0, "kicker": "THE ONLY GAP", "line": "Millionaires learned it",    "accent": "at the dinner table." },
+    { "t": 16.0, "d": 4.0, "kicker": "YOU",          "line": "You're learning it",         "accent": "from a phone." },
+    { "t": 20.0, "d": 3.0, "kicker": "START",        "line": "with your credit.",         "accent": "Cheapest money you'll access." },
+    { "t": 23.0, "d": 3.0, "kicker": "FREE",         "line": "royalruby.co/tt",            "accent": "One step at a time." }
+  ]
+}

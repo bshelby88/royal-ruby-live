@@ -1,0 +1,33 @@
+{
+  "name": "Ruby Wisdom Drop #04 \u2014 The 30% Rule Is a Lie",
+  "description": "Utilization is 30% of your FICO and most people get the timing wrong. The bureaus snapshot your balance whenever the lender reports \u2014 not on the due date. Fix: pay down before the statement closes, not after. Unlockable: the statement-date tracker spreadsheet.\n\nEducational content only.",
+  "image": "ipfs://REPLACE_WITH_THUMBNAIL_FOLDER_CID/04-utilization.png",
+  "animation_url": "ipfs://REPLACE_WITH_VIDEO_FOLDER_CID/04-utilization.mp4",
+  "external_url": "https://royalruby.co",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Wisdom Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#04"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Length",
+      "value": "Short-form"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    }
+  ]
+}

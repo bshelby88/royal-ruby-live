@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Check your inbox — Royal Ruby</title>
+  <meta name="description" content="Your Credit Reset Checklist is on the way. Check your inbox." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script defer src="/payments.js"></script>
+  <script defer src="/affiliates.js"></script>
+  <style>
+    :root {
+      --ruby: #9B1B30;
+      --ruby-deep: #6E0F1F;
+      --ivory: #F8F4E9;
+      --charcoal: #1C1C1C;
+      --gold: #C9A449;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", -apple-system, sans-serif;
+      background: var(--ivory);
+      color: var(--charcoal);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' /%3E%3C/svg%3E");
+    }
+    .wrap { max-width: 700px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 2; }
+    header { padding: 1.75rem 0; border-bottom: 1px solid rgba(28,28,28,0.08); }
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--ruby);
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+    .logo span { color: var(--gold); font-style: italic; }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 3rem 0;
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ruby);
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--ruby);
+      border-radius: 999px;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.5rem, 1rem + 5vw, 4.5rem);
+      font-weight: 800;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+    }
+    h1 em { font-style: italic; color: var(--ruby); }
+    .lead {
+      font-size: 1.2rem;
+      color: rgba(28,28,28,0.72);
+      margin-bottom: 2.5rem;
+      max-width: 48ch;
+      line-height: 1.55;
+    }
+    .check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      background: var(--ruby);
+      border-radius: 50%;
+      margin-bottom: 2rem;
+      animation: pop 600ms var(--ease) both;
+    }
+    .check svg { width: 36px; height: 36px; stroke: var(--ivory); stroke-width: 3; fill: none; }
+    @keyframes pop {
+      0% { transform: scale(0); }
+      70% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .next-steps {
+      background: var(--charcoal);
+      color: var(--ivory);
+      padding: 2.5rem;
+      border-radius: 4px;
+      margin-top: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .next-steps::before {
+      content: "";
+      position: absolute;
+      top: -40%; right: -30%;
+      width: 120%; height: 180%;
+      background: radial-gradient(circle, rgba(155,27,48,0.3), transparent 60%);
+      pointer-events: none;
+    }
+    .next-steps h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .next-steps ol {
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .next-steps li {
+      padding: 0.5rem 0;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      line-height: 1.5;
+    }
+    .next-steps li::marker {
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .cta-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .cta-primary, .cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 1.5rem;
+      border-radius: 2px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: transform 250ms var(--ease), background 250ms var(--ease);
+    }
+    .cta-primary {
+      background: var(--ruby);
+      color: var(--ivory);
+    }
+    .cta-primary:hover { background: var(--ruby-deep); transform: translateY(-2px); }
+    .cta-secondary {
+      background: transparent;
+      color: var(--charcoal);
+      border: 1px solid rgba(28,28,28,0.2);
+    }
+    .cta-secondary:hover { border-color: var(--charcoal); }
+    footer {
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.78rem;
+      color: rgba(28,28,28,0.5);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="/" class="logo">Royal<span>Ruby</span></a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="check">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </div>
+    <span class="eyebrow">You're in</span>
+    <h1>Check your <em>inbox.</em></h1>
+    <p class="lead">The 5-Page Credit Reset Checklist is on its way. Give it 1–2 minutes to arrive. If you don't see it, check spam and add <strong>jadedfocus@gmail.com</strong> to your contacts.</p>
+
+    <div class="next-steps">
+      <h2>Three things to do right now</h2>
+      <ol>
+        <li>Pull your free reports at AnnualCreditReport.com — even before the checklist arrives, this is Step 1.</li>
+        <li>Write down today's FICO score. This is your Day 0 baseline. 90 days from now, you'll want to know where you started.</li>
+        <li>Put a recurring Sunday reminder on your phone: "Credit check-in — 10 minutes." Small, consistent moves are what wins.</li>
+      </ol>
+    </div>
+
+    <div class="cta-row">
+      <a href="/checklist.html" class="cta-primary">
+        Read the checklist online &rarr;
+      </a>
+      <a href="mailto:jadedfocus@gmail.com?subject=Ruby%20Starter%20Pack%20waitlist" class="cta-secondary" data-buy="ruby-starter-pack">
+        Join Starter Pack waitlist
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    © 2026 Royal Ruby LLC · Unlock your credit. Build real wealth.
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+# Netlify/Cloudflare Pages redirect rules
+# Marketing-friendly short URLs → real pages
+/start       /                 302
+/read        /checklist.html   302

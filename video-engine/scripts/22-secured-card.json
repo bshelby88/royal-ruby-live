@@ -1,0 +1,13 @@
+{
+  "slug": "22-secured-card",
+  "duration": 30,
+  "bg_gradient": ["#0B0408", "#160810"],
+  "beats": [
+    { "t": 0.0,  "d": 5.0, "kicker": "NO CREDIT", "line": "The cheapest way to",         "accent": "build from zero." },
+    { "t": 5.0,  "d": 5.0, "kicker": "SECURED",   "line": "A credit card you pre-pay.",   "accent": "Your deposit = limit." },
+    { "t": 10.0, "d": 5.0, "kicker": "WHY",       "line": "Reports like any card.",        "accent": "Builds real history." },
+    { "t": 15.0, "d": 5.0, "kicker": "RULE",      "line": "Pick one that graduates",      "accent": "to unsecured." },
+    { "t": 20.0, "d": 5.0, "kicker": "12 MONTHS", "line": "Get your deposit back.",        "accent": "Keep the history." },
+    { "t": 25.0, "d": 5.0, "kicker": "FULL PATH", "line": "The secured card ladder →",    "accent": "royalruby.co/tt" }
+  ]
+}

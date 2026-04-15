@@ -1,0 +1,13 @@
+{
+  "slug": "25-patience",
+  "duration": 30,
+  "bg_gradient": ["#0B0408", "#160810"],
+  "beats": [
+    { "t": 0.0,  "d": 5.0, "kicker": "SLOW",    "line": "Credit repair",                  "accent": "is boring." },
+    { "t": 5.0,  "d": 5.0, "kicker": "BETWEEN", "line": "the viral 540-to-680 posts",    "accent": "is 60 days of waiting." },
+    { "t": 10.0, "d": 5.0, "kicker": "EMAILS",  "line": "Checking the mail.",             "accent": "Checking the portal." },
+    { "t": 15.0, "d": 5.0, "kicker": "THEN",    "line": "One day —",                      "accent": "your score is different." },
+    { "t": 20.0, "d": 5.0, "kicker": "QUIET",   "line": "Not dramatic.",                  "accent": "Just different." },
+    { "t": 25.0, "d": 5.0, "kicker": "STAY",    "line": "with it.",                        "accent": "royalruby.co/tt" }
+  ]
+}

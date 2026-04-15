@@ -1,0 +1,14 @@
+{
+  "slug": "08-dispute-receipts",
+  "duration": 25,
+  "bg_gradient": ["#0B0408", "#1C0A10"],
+  "beats": [
+    { "t": 0.0,  "d": 4.0, "kicker": "RECEIPTS", "line": "This letter removed",            "accent": "a 6-year-old collection." },
+    { "t": 4.0,  "d": 3.5, "kicker": "HOW LONG", "line": "Eleven days.",                   "accent": "Not eleven months." },
+    { "t": 7.5,  "d": 4.0, "kicker": "MOVE 01",  "line": "Cite the specific",              "accent": "FCRA section." },
+    { "t": 11.5, "d": 4.0, "kicker": "MOVE 02",  "line": "Demand method of",                "accent": "verification — not validation." },
+    { "t": 15.5, "d": 4.0, "kicker": "MOVE 03",  "line": "Certified mail with",             "accent": "return receipt." },
+    { "t": 19.5, "d": 2.5, "kicker": "30 DAYS",  "line": "They verify or",                  "accent": "they delete." },
+    { "t": 22.0, "d": 3.0, "kicker": "TEMPLATE", "line": "Inside the Vault →",              "accent": "royalruby.co/tt" }
+  ]
+}
