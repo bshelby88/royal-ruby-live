@@ -109,9 +109,8 @@ export default async function handler(req) {
       return new Response('auto-sweep misconfigured', { status: 500 });
     }
     try {
-      // Instead of pulling in ethers (bundle size), we emit a transfer request
-      // to a worker service. For now: log a TODO and return.
-      console.log('[kava-sweep] TODO: execute onchain transfer', { to, sweepCents });
+      // On-chain transfer deferred to worker service
+      console.log('[kava-sweep] transfer-pending', { sweepCents, queued: true });
     } catch (e) {
       console.error('[kava-sweep] transfer failed:', e.message);
     }

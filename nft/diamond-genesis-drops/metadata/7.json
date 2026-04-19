@@ -1,0 +1,32 @@
+{
+  "name": "Diamond Genesis Drop #07 \u2014 Partner Mint Pass",
+  "description": "Priority on every partner project Diamond ever co-launches. The Pass moves you to the top of partner allowlists before public sale.\n\nUnlockable perk: Allowlist on all partner mints, no application required.\n\nMembership access only. No revenue claims, no profit sharing. Educational and community-utility content. See docs/UTILITY-PERKS.md.",
+  "image": "https://royal-ruby-theta.vercel.app/nft/diamond-genesis-drops/art/7.png",
+  "external_url": "https://diamond.kava",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Genesis Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#07"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Perk",
+      "value": "Partner Mint Pass"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    }
+  ]
+}

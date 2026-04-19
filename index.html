@@ -42,6 +42,21 @@
   <!-- Affiliate attribution (?ref=xyz → injected into forms + Stripe links) -->
   <script defer src="/affiliates.js"></script>
 
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Royal Ruby",
+    "url": "https://royalruby.co",
+    "logo": "https://royalruby.co/favicon.svg",
+    "sameAs": [
+      "https://twitter.com/jadedfocus",
+      "https://tiktok.com/@bryantshelby617"
+    ]
+  }
+  </script>
+
   <style>
     :root {
       --ruby: #9B1B30;
@@ -650,8 +665,8 @@
         <p>The 90-day financial reset bundle — the checklist, a budget builder, a debt destroyer, and the dispute letter templates we use. One-time, not a subscription.</p>
         <!-- Auto-rewritten to Stripe Payment Link by /payments.js when live.
              Falls back to mailto: waitlist until a URL is configured. -->
-        <a href="mailto:jadedfocus@gmail.com?subject=Ruby%20Starter%20Pack%20waitlist&body=Hi%20Royal%20Ruby%20%E2%80%94%20please%20add%20me%20to%20the%20Ruby%20Starter%20Pack%20waitlist.%20I%27ll%20buy%20the%20moment%20it%27s%20live." class="cta-btn" data-product="ruby-starter-pack" data-buy="ruby-starter-pack">
-          Join the Starter Pack waitlist
+        <a href="https://buy.stripe.com/5kQ4gz9cV1A94EP0J37Re02" class="cta-btn" data-product="ruby-starter-pack" data-buy="ruby-starter-pack">
+          Get the Starter Pack — $17
         </a>
       </div>
       <div class="product-card">
@@ -677,12 +692,12 @@
         <div class="kicker" style="color:var(--gold);">Rung Two</div>
         <h2 style="color:var(--ivory);">For the ones with <em style="color:var(--gold);">real damage.</em></h2>
         <p style="color:rgba(248,244,233,0.75);">The <strong>Ruby Dispute Vault</strong> is the binder. Twelve battle-tested dispute letter templates, the FCRA script book, a method-of-verification playbook, and the actual letters Dr. Marigny has used to remove collections, charge-offs, and six-year-old judgments. Certified-mail ready.</p>
-        <a href="mailto:jadedfocus@gmail.com?subject=Ruby%20Dispute%20Vault%20waitlist&body=Hi%20Royal%20Ruby%20%E2%80%94%20please%20add%20me%20to%20the%20Ruby%20Dispute%20Vault%20waitlist."
+        <a href="https://buy.stripe.com/bJe9ATbl3gv32wH1N77Re03"
            class="cta-btn"
            data-product="ruby-dispute-vault"
            data-buy="ruby-dispute-vault"
            style="background:var(--ruby);">
-          Join the Dispute Vault waitlist
+          Get the Dispute Vault — $47
         </a>
       </div>
       <div class="product-card" style="background:#15100E;border-color:rgba(201,164,73,0.25);">
@@ -702,12 +717,46 @@
       </div>
     </div>
   </section>
+  <section class="next">
+    <div class="wrap next-inner">
+      <div>
+        <div class="kicker">Rung Three</div>
+        <h2>Credit becomes <em>capital.</em></h2>
+        <p>The <strong>Credit Stacker</strong> is the full program. Business credit from zero, leverage strategies, quarterly wealth-move briefings from Dr. Marigny, and the complete framework that turns a credit score into an income-generating asset. This is how you stop repairing and start building.</p>
+        <a href="https://buy.stripe.com/6oU14n0GpceN9Z90J37Re04"
+           class="cta-btn"
+           data-product="credit-stacker"
+           style="background:var(--ruby);">
+          Get the Credit Stacker — $97
+        </a>
+      </div>
+      <div class="product-card">
+        <div class="price"><sup>$</sup>97</div>
+        <div class="product-name">Credit Stacker</div>
+        <ul>
+          <li>Everything in the Starter Pack + Dispute Vault</li>
+          <li>Business credit blueprint (LLC → EIN → D&B → Net-30s)</li>
+          <li>Leverage playbook (credit lines as capital)</li>
+          <li>Dr. Marigny quarterly wealth-move briefing</li>
+          <li>Personalized 1/1 NFT certificate on Base</li>
+          <li>Lagniappe — your unexpected bonus (we do more)</li>
+          <li>Lifetime access — one payment, every future update</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span class="tag">Unlock your credit. Build real wealth.</span>
-    © 2026 Royal Ruby LLC. Educational content only — not legal or financial advice.
+    <span class="tag">"Wisdom is the principal thing." — Proverbs 4:7</span>
+    <div style="margin:1rem 0">
+      <a href="https://linktr.ee/jadedfocus" style="color:#C9A449;margin:0 0.5rem">Linktree</a>
+      <a href="https://twitter.com/jadedfocus" style="color:#C9A449;margin:0 0.5rem">Twitter</a>
+      <a href="https://tiktok.com/@bryantshelby617" style="color:#C9A449;margin:0 0.5rem">TikTok</a>
+      <a href="/links" style="color:#C9A449;margin:0 0.5rem">All Links</a>
+    </div>
+    © 2026 Royal Ruby LLC · Bryant & Dr. Marigny · Greater Wisdom
     <div class="legal">
       <a href="/privacy.html">Privacy</a>
       <a href="/terms.html">Terms</a>

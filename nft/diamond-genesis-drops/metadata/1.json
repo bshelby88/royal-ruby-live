@@ -1,0 +1,32 @@
+{
+  "name": "Diamond Genesis Drop #01 \u2014 Founder Glyph",
+  "description": "Genesis access marker. The first Diamond Genesis Drop \u2014 proof you were here before the 1,111 ERC-721 Pass deploys. Holders are placed at the top of the Pass allowlist and receive a permanent founder tag in the members Discord.\n\nUnlockable perk: Pass-allowlist priority + permanent founder tag.\n\nMembership access only. No revenue claims, no profit sharing. Educational and community-utility content. See docs/UTILITY-PERKS.md.",
+  "image": "https://royal-ruby-theta.vercel.app/nft/diamond-genesis-drops/art/1.png",
+  "external_url": "https://diamond.kava",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Genesis Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#01"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Perk",
+      "value": "Founder Glyph"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    }
+  ]
+}

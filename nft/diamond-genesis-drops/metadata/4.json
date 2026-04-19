@@ -1,0 +1,32 @@
+{
+  "name": "Diamond Genesis Drop #04 \u2014 Concierge Key",
+  "description": "Token-gated access to the Diamond AI concierge \u2014 Gemini Flash answering member questions 24/7 with Royal Ruby playbooks, credit education context, and Diamond drop schedules pre-loaded.\n\nUnlockable perk: Unlimited concierge queries via private gateway.\n\nMembership access only. No revenue claims, no profit sharing. Educational and community-utility content. See docs/UTILITY-PERKS.md.",
+  "image": "https://royal-ruby-theta.vercel.app/nft/diamond-genesis-drops/art/4.png",
+  "external_url": "https://diamond.kava",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Genesis Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#04"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Perk",
+      "value": "Concierge Key"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    }
+  ]
+}

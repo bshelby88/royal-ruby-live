@@ -1,0 +1,32 @@
+{
+  "name": "Diamond Genesis Drop #09 \u2014 Summit Invite",
+  "description": "An invitation to the annual Diamond virtual summit \u2014 keynote, AI-worker live demos, holder-only AMA with Bryant and the Royal Ruby team, and a year-in-review treasury report.\n\nUnlockable perk: 1 confirmed seat at Diamond Summit (virtual).\n\nMembership access only. No revenue claims, no profit sharing. Educational and community-utility content. See docs/UTILITY-PERKS.md.",
+  "image": "https://royal-ruby-theta.vercel.app/nft/diamond-genesis-drops/art/9.png",
+  "external_url": "https://diamond.kava",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Genesis Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#09"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Perk",
+      "value": "Summit Invite"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    }
+  ]
+}

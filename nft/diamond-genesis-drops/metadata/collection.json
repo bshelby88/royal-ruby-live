@@ -1,0 +1,8 @@
+{
+  "name": "Diamond Genesis Drops",
+  "description": "Ten utility-tier passes from Project Diamond \u2014 the AI-coordinated rewards club on Base. Each Genesis Drop unlocks one specific Diamond perk: AI concierge, members Discord, monthly digital drops, partner mint priority, Royal Ruby discount, summit invite, and governance voice. Open-edition lazy mint via OpenSea. Holders are auto-rostered into the Diamond Pass Utility allowlist when the 1,111-supply ERC-721 deploys.\n\nMembership access only. No revenue claims, no profit sharing, no investment contract. See docs/UTILITY-PERKS.md for the full perk schedule.",
+  "image": "https://royal-ruby-theta.vercel.app/nft/diamond-genesis-drops/art/1.png",
+  "external_link": "https://diamond.kava",
+  "seller_fee_basis_points": 750,
+  "fee_recipient": "0x6bDea25c368c32eeCb31054dd4766Fc8125e4e02"
+}

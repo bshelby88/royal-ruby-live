@@ -1,0 +1,32 @@
+{
+  "name": "Diamond Genesis Drop #05 \u2014 Drop Calendar",
+  "description": "First look at every monthly digital drop scheduled for the next 12 months. Holders see next drop 7 days before public reveal and can claim a single guaranteed allocation.\n\nUnlockable perk: 7-day early reveal + 1 guaranteed allocation per drop.\n\nMembership access only. No revenue claims, no profit sharing. Educational and community-utility content. See docs/UTILITY-PERKS.md.",
+  "image": "https://royal-ruby-theta.vercel.app/nft/diamond-genesis-drops/art/5.png",
+  "external_url": "https://diamond.kava",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Genesis Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#05"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Perk",
+      "value": "Drop Calendar"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "name": "Ruby Wisdom Drop #01 \u2014 Myth #1 \u2014 The Soft Pull",
   "description": "The first video in the Royal Ruby Wisdom series. A 26-second correction of the most common credit myth in America. Checking your own credit does NOT hurt your score \u2014 it's a soft pull, invisible to lenders. Unlockable content: the full script, a one-page printable handout, and access to the Royal Ruby mailing list.\n\nEducational content only. Not legal or financial advice.",
-  "image": "ipfs://REPLACE_WITH_THUMBNAIL_FOLDER_CID/01-credit-check-myth.png",
-  "animation_url": "ipfs://REPLACE_WITH_VIDEO_FOLDER_CID/01-credit-check-myth.mp4",
+  "image": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/art/1.png",
+  "animation_url": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/videos/01-credit-check-myth.mp4",
   "external_url": "https://royalruby.co",
   "attributes": [
     {

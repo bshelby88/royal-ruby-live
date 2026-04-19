@@ -6,11 +6,16 @@
   "scripts": {
     "dev": "python3 -m http.server 8080",
     "dev:node": "npx --yes serve -p 8080 .",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "deploy:vercel": "npx --yes vercel --prod",
     "deploy:netlify": "npx --yes netlify-cli deploy --prod --dir=.",
     "deploy:cloudflare": "npx --yes wrangler pages deploy . --project-name=royal-ruby"
   },
   "keywords": ["royal-ruby", "credit", "landing-page"],
   "author": "Royal Ruby LLC",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  }
 }

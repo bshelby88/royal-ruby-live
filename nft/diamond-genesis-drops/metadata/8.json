@@ -1,0 +1,32 @@
+{
+  "name": "Diamond Genesis Drop #08 \u2014 Ruby Bridge",
+  "description": "A standing 10% discount on every Royal Ruby digital product (Starter Pack, Dispute Vault, Credit Stacker) and a free copy of any Royal Ruby Wisdom Drop NFT released within 30 days of holding.\n\nUnlockable perk: 10% Royal Ruby discount + free Wisdom Drop on launch weeks.\n\nMembership access only. No revenue claims, no profit sharing. Educational and community-utility content. See docs/UTILITY-PERKS.md.",
+  "image": "https://royal-ruby-theta.vercel.app/nft/diamond-genesis-drops/art/8.png",
+  "external_url": "https://diamond.kava",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Genesis Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#08"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Perk",
+      "value": "Ruby Bridge"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Diamond Genesis Drop #10 \u2014 Governance Voice",
+  "description": "Advisory governance \u2014 non-binding holder votes on perk additions, treasury reallocation proposals, partner candidates, and content roadmap. One vote per Genesis Drop held.\n\nUnlockable perk: 1 advisory vote per quarter on roadmap proposals.\n\nMembership access only. No revenue claims, no profit sharing. Educational and community-utility content. See docs/UTILITY-PERKS.md.",
+  "image": "https://royal-ruby-theta.vercel.app/nft/diamond-genesis-drops/art/10.png",
+  "external_url": "https://diamond.kava",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Genesis Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#10"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Perk",
+      "value": "Governance Voice"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    }
+  ]
+}

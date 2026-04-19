@@ -1,0 +1,32 @@
+{
+  "name": "Diamond Genesis Drop #06 \u2014 Discord Sigil",
+  "description": "Token-gated entry to the Diamond members Discord. Voice channels, AMA archive, weekly Kava office hours, and the private Royal Ruby x Diamond cross-channel.\n\nUnlockable perk: Permanent members-Discord access via Collab.Land.\n\nMembership access only. No revenue claims, no profit sharing. Educational and community-utility content. See docs/UTILITY-PERKS.md.",
+  "image": "https://royal-ruby-theta.vercel.app/nft/diamond-genesis-drops/art/6.png",
+  "external_url": "https://diamond.kava",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Genesis Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#06"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Perk",
+      "value": "Discord Sigil"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    }
+  ]
+}

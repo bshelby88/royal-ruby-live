@@ -1,0 +1,11 @@
+node_modules
+.git
+.vercel
+*.log
+videos
+nft/art
+nft/metadata
+nft/manifold
+nft/marketing
+nft/*.sol
+nft/*.md

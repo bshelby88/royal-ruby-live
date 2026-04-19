@@ -1,0 +1,32 @@
+{
+  "name": "Diamond Genesis Drop #02 \u2014 AI Worker Charter",
+  "description": "The four-worker roster \u2014 Kava (lead), BEAN (watchdog), Gemini Flash (concierge), Claude Sonnet (content) \u2014 codified as a holder artifact. Documents the role, KPI, and capped budget for each AI worker funded by Diamond's treasury.\n\nUnlockable perk: Read-only access to live AI worker dashboards.\n\nMembership access only. No revenue claims, no profit sharing. Educational and community-utility content. See docs/UTILITY-PERKS.md.",
+  "image": "https://royal-ruby-theta.vercel.app/nft/diamond-genesis-drops/art/2.png",
+  "external_url": "https://diamond.kava",
+  "attributes": [
+    {
+      "trait_type": "Series",
+      "value": "Genesis Drops"
+    },
+    {
+      "trait_type": "Drop",
+      "value": "#02"
+    },
+    {
+      "trait_type": "Tier",
+      "value": "Genesis"
+    },
+    {
+      "trait_type": "Perk",
+      "value": "AI Worker Charter"
+    },
+    {
+      "trait_type": "Unlockable",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Base"
+    }
+  ]
+}
