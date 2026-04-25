@@ -26,7 +26,7 @@
     'ruby-dispute-vault': {
       name: 'Ruby Dispute Vault',
       price: 47,
-      url: '',
+      url: 'https://buy.stripe.com/bJe9ATbl3gv32wH1N77Re03',
       ctaLive: 'Unlock the Dispute Vault — $47',
       ctaWaitlist: 'Join the Dispute Vault waitlist',
     },
