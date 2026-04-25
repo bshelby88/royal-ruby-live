@@ -109,7 +109,7 @@ def render_drop_cover(idx: int, slug: str, kicker: str, title: str) -> Path:
     else:
         draw.text(((W - tw) / 2, H - bs_h + 110), title, font=serif, fill=IVORY)
 
-    brand = "ROYAL  RUBY  ·  royalruby.co"
+    brand = "ROYAL  RUBY  ·  royalruby.io"
     bw = draw.textlength(brand, font=mono)
     draw.text(((W - bw) / 2, H - 90), brand, font=mono, fill=GOLD)
 

@@ -8,6 +8,6 @@
     { "t": 10.0, "d": 5.0, "kicker": "LOCK",      "line": "Private product.",               "accent": "Not free. Not binding." },
     { "t": 15.0, "d": 5.0, "kicker": "WHICH",     "line": "Pick freeze.",                    "accent": "Always freeze." },
     { "t": 20.0, "d": 5.0, "kicker": "HOW",       "line": "15 minutes.",                     "accent": "Three bureau websites." },
-    { "t": 25.0, "d": 5.0, "kicker": "WALK",      "line": "The walkthrough is free →",      "accent": "royalruby.co/tt" }
+    { "t": 25.0, "d": 5.0, "kicker": "WALK",      "line": "The walkthrough is free →",      "accent": "royalruby.io/tt" }
   ]
 }

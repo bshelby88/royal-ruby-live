@@ -11,7 +11,7 @@
     "description": "The Bible talks about money more than faith and prayer combined. There's a reason.",
     "image": "ipfs://REPLACE_WITH_ART_CID/9.png",
     "animation_url": "ipfs://REPLACE_WITH_VIDEO_CID/09-faith-finance.mp4",
-    "external_url": "https://royalruby.co/nft"
+    "external_url": "https://royalruby.io/nft"
   },
   "claim": {
     "type": "open",
@@ -22,7 +22,7 @@
     "walletMax": 10,
     "royaltyBps": 500
   },
-  "unlockableContent": "**One-page devotional on financial stewardship + Luke 16:10 study guide**\n\nDownload: https://royalruby.co/unlock/09",
+  "unlockableContent": "**One-page devotional on financial stewardship + Luke 16:10 study guide**\n\nDownload: https://royalruby.io/unlock/09",
   "attributes": [
     {
       "trait_type": "Series",

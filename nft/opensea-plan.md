@@ -76,7 +76,7 @@ Same contract pattern as Dispute Vault Pass — just rename + adjust supply/pric
 Every drop gets the same 7-beat narrative spread across 4 platforms. Copy-paste ready.
 
 ### Day 0 — Foundation
-- **Update social bios everywhere** with `royalruby.co/nft` as a secondary link
+- **Update social bios everywhere** with `royalruby.io/nft` as a secondary link
 - **X (Twitter):** Pin a thread explaining the three collections (see `nft/marketing/pinned-thread.md`)
 - **Farcaster:** Create a Royal Ruby channel, post a welcome cast
 - **OpenSea:** Set up collection banners, descriptions, fee splits

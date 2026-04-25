@@ -53,7 +53,7 @@ npm run dev
 4. Generate an affiliate link for Dr. Marigny before the first traffic hits
 
 ### 4. Privacy-friendly analytics (Plausible — optional, $9/mo after trial)
-1. Sign up at https://plausible.io → add `royalruby.co`
+1. Sign up at https://plausible.io → add `royalruby.io`
 2. In `index.html`, uncomment the Plausible `<script>` tag
 3. Or skip this for v1 and use Cloudflare Web Analytics (free) after deploying to Cloudflare Pages
 
@@ -66,7 +66,7 @@ npx wrangler login
 # Deploy:
 npx wrangler pages deploy . --project-name=royal-ruby
 ```
-Custom domain: Cloudflare dashboard → Pages → royal-ruby → Custom domains → add `royalruby.co`
+Custom domain: Cloudflare dashboard → Pages → royal-ruby → Custom domains → add `royalruby.io`
 
 ### Option B: Vercel (also free, dead simple)
 ```bash
@@ -86,7 +86,7 @@ npx netlify-cli deploy --prod --dir=.
 
 ## Domain — the one step that needs a credit card
 
-You need `royalruby.co` (or whatever you land on). Options:
+You need `royalruby.io` (or whatever you land on). Options:
 - **Cloudflare Registrar** — at-cost pricing, $8-10/yr for `.co`, best TLS/DNS integration
 - **Namecheap** — $9-12/yr, easy UI
 - **Porkbun** — $10/yr, solid

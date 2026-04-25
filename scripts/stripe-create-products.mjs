@@ -50,21 +50,21 @@ const PRODUCTS = [
     name: 'Ruby Starter Pack',
     description: '90-day credit reset toolkit — checklist, budget builder, debt destroyer, and 3 dispute letter templates. One payment, lifetime access, instant delivery. Educational content only.',
     unitAmount: 1700,
-    successUrl: 'https://royalruby.co/thanks.html?product=starter-pack&paid=1',
+    successUrl: 'https://royalruby.io/thanks.html?product=starter-pack&paid=1',
   },
   {
     slug: 'ruby-dispute-vault',
     name: 'Ruby Dispute Vault',
     description: '12 battle-tested dispute letter templates, FCRA § 611 method-of-verification playbook, certified-mail walkthrough, and 30-day follow-up cadence. Used by Dr. Herman Marigny III. Educational content only.',
     unitAmount: 4700,
-    successUrl: 'https://royalruby.co/thanks.html?product=dispute-vault&paid=1',
+    successUrl: 'https://royalruby.io/thanks.html?product=dispute-vault&paid=1',
   },
   {
     slug: 'ruby-credit-stacker',
     name: 'Ruby Credit Stacker',
     description: 'The advanced credit-building playbook — secured card ladders, tradeline strategy, business credit separation, and the 700-club protocol. 90 pages. Educational content only.',
     unitAmount: 9700,
-    successUrl: 'https://royalruby.co/thanks.html?product=credit-stacker&paid=1',
+    successUrl: 'https://royalruby.io/thanks.html?product=credit-stacker&paid=1',
   },
 ];
 

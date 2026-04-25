@@ -8,7 +8,7 @@ The one-page map. If a file exists, it's listed here. If it's listed here, you k
 
 | URL | What |
 |---|---|
-| https://royal-ruby-theta.vercel.app | Production root (alias: `royalruby.co` when custom domain is attached) |
+| https://royal-ruby-theta.vercel.app | Production root (alias: `royalruby.io` when custom domain is attached) |
 | https://royal-ruby-theta.vercel.app/read | Free 90-day checklist (lead magnet) |
 | https://royal-ruby-theta.vercel.app/nft | NFT mint page (Ruby Dispute Vault Pass + Wisdom Drops) |
 | https://royal-ruby-theta.vercel.app/api/frame?drop=1 | Farcaster Frame for Wisdom Drop #1 |
@@ -18,11 +18,11 @@ The one-page map. If a file exists, it's listed here. If it's listed here, you k
 
 ## Short links to use in bios
 
-- TikTok → `royalruby.co/tt`
-- Instagram → `royalruby.co/ig`
-- YouTube → `royalruby.co/yt`
-- Facebook → `royalruby.co/fb`
-- X/Twitter → `royalruby.co/x`
+- TikTok → `royalruby.io/tt`
+- Instagram → `royalruby.io/ig`
+- YouTube → `royalruby.io/yt`
+- Facebook → `royalruby.io/fb`
+- X/Twitter → `royalruby.io/x`
 
 ---
 

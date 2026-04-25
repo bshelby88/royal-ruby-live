@@ -33,7 +33,7 @@ Hey [FIRST_NAME],
 
 Here's the 5-page 90-day credit reset checklist you signed up for:
 
-**→ [Download the checklist](https://royalruby.co/read)**
+**→ [Download the checklist](https://royalruby.io/read)**
 
 Before you open it, one thing.
 
@@ -142,7 +142,7 @@ It's the checklist plus three more things:
 
 One-time payment of $17. No subscription. Instant download. The full kit lives here:
 
-**→ [Ruby Starter Pack — $17](https://royalruby.co)**
+**→ [Ruby Starter Pack — $17](https://royalruby.io)**
 
 That's the only offer you'll get from me this week. If it's not a fit, ignore it — the rest of this sequence is pure value, no pitch.
 

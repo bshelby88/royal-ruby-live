@@ -83,7 +83,7 @@ for i, drop in enumerate(DROPS, start=1):
         "description": drop["description"],
         "image": f"ipfs://{PLACEHOLDER_IMAGE_CID}/{drop['slug']}.png",
         "animation_url": f"ipfs://{PLACEHOLDER_VIDEO_CID}/{drop['slug']}.mp4",
-        "external_url": "https://royalruby.co",
+        "external_url": "https://royalruby.io",
         "attributes": [
             {"trait_type": "Series",      "value": "Wisdom Drops"},
             {"trait_type": "Drop",        "value": f"#{i:02d}"},
@@ -102,7 +102,7 @@ collection = {
     "name": "Ruby Wisdom Drops",
     "description": "Ten short-form credit-education video NFTs from Dr. Herman Marigny III and Royal Ruby. Each drop is a 20–30 second wisdom reel — a single myth, mistake, or move — with unlockable content including scripts, worksheets, and printables. Open-edition minting on Base. Holders get auto-enrollment in the Diamond/Kava community and early access to future Ruby drops.\n\nEducational content only. Not legal or financial advice.",
     "image": f"ipfs://{PLACEHOLDER_IMAGE_CID}/cover.png",
-    "external_link": "https://royalruby.co",
+    "external_link": "https://royalruby.io",
     "seller_fee_basis_points": 500,
     "fee_recipient": "REPLACE_WITH_TREASURY_ADDRESS"
 }

@@ -11,7 +11,7 @@
     "description": "Why the pay-for-delete trap keeps people poor \u2014 and what actually works instead.",
     "image": "ipfs://REPLACE_WITH_ART_CID/6.png",
     "animation_url": "ipfs://REPLACE_WITH_VIDEO_CID/06-pay-for-delete.mp4",
-    "external_url": "https://royalruby.co/nft"
+    "external_url": "https://royalruby.io/nft"
   },
   "claim": {
     "type": "open",
@@ -22,7 +22,7 @@
     "walletMax": 10,
     "royaltyBps": 500
   },
-  "unlockableContent": "**Goodwill-letter template + negotiation playbook**\n\nDownload: https://royalruby.co/unlock/06",
+  "unlockableContent": "**Goodwill-letter template + negotiation playbook**\n\nDownload: https://royalruby.io/unlock/06",
   "attributes": [
     {
       "trait_type": "Series",

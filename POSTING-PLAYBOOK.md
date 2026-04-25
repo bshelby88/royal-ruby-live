@@ -44,20 +44,20 @@ Each has a matching `.png` thumbnail. All silent — add music in CapCut at uplo
 2. Upload `01-credit-check-myth.mp4`
 3. Caption: *"The #1 credit myth Dr. Marigny debunks every week. Free 90-day reset checklist → link in bio."*
 4. Hashtags: `#creditrepair #creditscore #financialliteracy #generationalwealth #creditrepairtips`
-5. Bio link: `royalruby.co/tt`
+5. Bio link: `royalruby.io/tt`
 6. Pin this comment: *"Free checklist → link in bio. Educational content only, not financial advice."*
 
 Wait 4 hours. Check TikTok analytics. If it gets any traction (>500 views), post #2 on IG Reels. If it flops, that's fine — data is data.
 
 ### Day 2 — Instagram Reels
 1. Upload `02-540-to-680.mp4` to IG Reels
-2. Same caption, update to `royalruby.co/ig`
+2. Same caption, update to `royalruby.io/ig`
 3. Cross-post to FB Reels from IG (one-click toggle on upload)
 
 ### Day 3 — YouTube Shorts
 1. Upload `03-oldest-card.mp4`
 2. Title: *"Don't Close Your Oldest Credit Card (Dr. Marigny explains why)"*
-3. Description: link to `royalruby.co/yt`
+3. Description: link to `royalruby.io/yt`
 
 ### Day 4 — back to TikTok
 1. Upload `04-utilization.mp4`
@@ -68,7 +68,7 @@ Wait 4 hours. Check TikTok analytics. If it gets any traction (>500 views), post
 2. This one is your Facebook winner — Dr. Marigny's existing community lives there
 
 ### Day 6 — Rest, look at the data
-Go to Vercel Analytics → `royalruby.co` → Events. Filter by `utm_source`. Which platform drove the most clicks? Which brought the most checklist signups? Which brought the most Stripe checkout starts?
+Go to Vercel Analytics → `royalruby.io` → Events. Filter by `utm_source`. Which platform drove the most clicks? Which brought the most checklist signups? Which brought the most Stripe checkout starts?
 
 ### Day 7 — Write Batch 02
 Based on what you learned, draft 10 more scripts. I can render them the same day you deliver the JSON.
@@ -100,7 +100,7 @@ Based on what you learned, draft 10 more scripts. I can render them the same day
 ### X / Twitter (bonus)
 - X rewards native video uploads in the feed
 - Same MP4, upload directly, add a 1-line comment
-- Bio link: `royalruby.co/x`
+- Bio link: `royalruby.io/x`
 
 ### Threads (bonus)
 - Cross-post from IG automatically

@@ -9,6 +9,6 @@
     { "t": 9.5,  "d": 3.5, "kicker": "THAT'S",      "line": "$211 a month.",                "accent": "For 360 months." },
     { "t": 13.0, "d": 3.0, "kicker": "WEALTH GAP",  "line": "isn't about income.",         "accent": "It's about capital cost." },
     { "t": 16.0, "d": 3.0, "kicker": "FIX IT",      "line": "Start with your",              "accent": "three-bureau reports." },
-    { "t": 19.0, "d": 3.0, "kicker": "FREE",        "line": "royalruby.co/tt",              "accent": "" }
+    { "t": 19.0, "d": 3.0, "kicker": "FREE",        "line": "royalruby.io/tt",              "accent": "" }
   ]
 }

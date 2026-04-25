@@ -159,7 +159,7 @@ def render_product_cover(slug: str, kicker: str, title: str, sub: str, price: in
     # Bottom brand + url
     draw.rectangle((80, h - 240, w - 80, h - 236), fill=hx(GOLD))
     draw.text((80, h - 200), "ROYAL  RUBY", font=sans_md, fill=hx(IVORY))
-    draw.text((80, h - 140), "royalruby.co", font=mono_md, fill=hx(GOLD))
+    draw.text((80, h - 140), "royalruby.io", font=mono_md, fill=hx(GOLD))
     draw.text((80, h - 80), "Educational content only — not legal or financial advice.", font=sans_xs, fill=(248, 244, 233, 100))
 
     out = ROOT / "images" / "products" / f"{slug}-cover.png"
@@ -211,7 +211,7 @@ def render_og(slug: str, kicker: str, title: str, sub: str) -> Path:
 
     # Bottom brand + url
     draw.text((110, h - 80), "ROYAL  RUBY", font=sans_md, fill=hx(IVORY))
-    draw.text((110, h - 45), "royalruby.co", font=mono_md, fill=hx(GOLD))
+    draw.text((110, h - 45), "royalruby.io", font=mono_md, fill=hx(GOLD))
 
     out = ROOT / f"og-{slug}.png" if slug != "site" else ROOT / "og.png"
     img.save(out, "PNG", optimize=True)
@@ -333,7 +333,7 @@ def main() -> int:
         slug="site",
         kicker="ROYAL RUBY",
         title="Unlock your credit. Build real wealth.",
-        sub="Free 90-day reset checklist · royalruby.co",
+        sub="Free 90-day reset checklist · royalruby.io",
     )
     render_og(
         slug="nft",

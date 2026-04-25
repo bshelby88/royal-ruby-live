@@ -11,7 +11,7 @@
     "description": "The first video in the Ruby Wisdom series. A 26-second correction of the most common credit myth in America. Checking your own credit does NOT hurt your score \u2014 it's a soft pull, invisible to lenders.",
     "image": "ipfs://REPLACE_WITH_ART_CID/1.png",
     "animation_url": "ipfs://REPLACE_WITH_VIDEO_CID/01-credit-check-myth.mp4",
-    "external_url": "https://royalruby.co/nft"
+    "external_url": "https://royalruby.io/nft"
   },
   "claim": {
     "type": "open",
@@ -22,7 +22,7 @@
     "walletMax": 10,
     "royaltyBps": 500
   },
-  "unlockableContent": "**Full script + printable one-page handout**\n\nDownload: https://royalruby.co/unlock/01\n\nNotes for sharing: Feel free to repost the video with attribution to Royal Ruby + @drherman_marigny.",
+  "unlockableContent": "**Full script + printable one-page handout**\n\nDownload: https://royalruby.io/unlock/01\n\nNotes for sharing: Feel free to repost the video with attribution to Royal Ruby + @drherman_marigny.",
   "attributes": [
     {
       "trait_type": "Series",

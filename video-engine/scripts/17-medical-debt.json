@@ -8,6 +8,6 @@
     { "t": 10.0, "d": 5.0, "kicker": "AND",      "line": "New medical debts",              "accent": "have a 12-month grace period." },
     { "t": 15.0, "d": 5.0, "kicker": "MEANING",  "line": "If it's on your report",        "accent": "and it's medical —" },
     { "t": 20.0, "d": 5.0, "kicker": "DISPUTE",  "line": "You have a federal right",      "accent": "to demand removal." },
-    { "t": 25.0, "d": 5.0, "kicker": "FREE",     "line": "The exact letter →",             "accent": "royalruby.co/tt" }
+    { "t": 25.0, "d": 5.0, "kicker": "FREE",     "line": "The exact letter →",             "accent": "royalruby.io/tt" }
   ]
 }

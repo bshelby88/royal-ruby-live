@@ -11,7 +11,7 @@
     "description": "One of the five quiet score killers \u2014 closing your oldest credit card shortens your average history and drops your score overnight.",
     "image": "ipfs://REPLACE_WITH_ART_CID/3.png",
     "animation_url": "ipfs://REPLACE_WITH_VIDEO_CID/03-oldest-card.mp4",
-    "external_url": "https://royalruby.co/nft"
+    "external_url": "https://royalruby.io/nft"
   },
   "claim": {
     "type": "open",
@@ -22,7 +22,7 @@
     "walletMax": 10,
     "royaltyBps": 500
   },
-  "unlockableContent": "**'Which card to keep alive' decision matrix + small-recurring-charge setup guide**\n\nDownload: https://royalruby.co/unlock/03",
+  "unlockableContent": "**'Which card to keep alive' decision matrix + small-recurring-charge setup guide**\n\nDownload: https://royalruby.io/unlock/03",
   "attributes": [
     {
       "trait_type": "Series",

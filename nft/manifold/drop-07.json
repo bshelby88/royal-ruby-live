@@ -11,7 +11,7 @@
     "description": "The FTC's number, not mine. One in five credit reports has a material error.",
     "image": "ipfs://REPLACE_WITH_ART_CID/7.png",
     "animation_url": "ipfs://REPLACE_WITH_VIDEO_CID/07-authority-pov.mp4",
-    "external_url": "https://royalruby.co/nft"
+    "external_url": "https://royalruby.io/nft"
   },
   "claim": {
     "type": "open",
@@ -22,7 +22,7 @@
     "walletMax": 10,
     "royaltyBps": 500
   },
-  "unlockableContent": "**Three-bureau dispute cheat sheet + AnnualCreditReport.com walkthrough**\n\nDownload: https://royalruby.co/unlock/07",
+  "unlockableContent": "**Three-bureau dispute cheat sheet + AnnualCreditReport.com walkthrough**\n\nDownload: https://royalruby.io/unlock/07",
   "attributes": [
     {
       "trait_type": "Series",

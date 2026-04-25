@@ -21,7 +21,7 @@ Script JSON shape:
         { "t": 3.0, "d": 4.0, "kicker": "THE TRUTH",   "line": "A soft pull is",             "accent": "invisible to lenders." },
         { "t": 7.0, "d": 4.0, "kicker": "WHAT HURTS",  "line": "Hard pulls + high",          "accent": "utilization do." },
         { "t": 11.0,"d": 5.0, "kicker": "THE MOVE",    "line": "Pull all three reports.",    "accent": "Read them with me." },
-        { "t": 16.0,"d": 5.0, "kicker": "FREE",        "line": "90-day reset checklist",     "accent": "royalruby.co/tt" },
+        { "t": 16.0,"d": 5.0, "kicker": "FREE",        "line": "90-day reset checklist",     "accent": "royalruby.io/tt" },
         { "t": 21.0,"d": 5.0, "kicker": "DR. MARIGNY", "line": "You can't build wealth",     "accent": "on a broken foundation." }
       ]
     }
@@ -184,7 +184,7 @@ def _render_beat_frame(
     brand = "ROYAL  RUBY"
     bw = draw.textlength(brand, font=small)
     draw.text(((W - bw) / 2, H - 140), brand, font=small, fill=(248, 244, 233))
-    sub = "royalruby.co"
+    sub = "royalruby.io"
     sw = draw.textlength(sub, font=small)
     draw.text(((W - sw) / 2, H - 90), sub, font=small, fill=_hex(GOLD))
 

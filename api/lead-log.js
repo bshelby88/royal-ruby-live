@@ -14,7 +14,7 @@
  *   C. A log-only fallback (stdout — Vercel Function Logs)
  *
  * Wire up in Formspree:
- *   Dashboard → your form → Webhook → URL = https://royalruby.co/api/lead-log
+ *   Dashboard → your form → Webhook → URL = https://royalruby.io/api/lead-log
  *   Method: POST
  *
  * Env (pick one):

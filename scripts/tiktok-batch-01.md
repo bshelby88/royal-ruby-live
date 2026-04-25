@@ -10,7 +10,7 @@
 - Never say "Stripe" or a dollar amount on camera. Drive to the **free** checklist. The upsell happens on the site.
 
 **Shared settings (copy-paste every post):**
-- Caption ends with: `Free 90-day credit reset checklist → royalruby.co/tt`
+- Caption ends with: `Free 90-day credit reset checklist → royalruby.io/tt`
 - Hashtags: `#creditrepair #creditscore #financialliteracy #generationalwealth #blackwealth #creditrepairtips #creditcoach`
 - Post time: 7am, 12pm, or 7pm ET (test which one moves)
 - Pin the comment: *"Free checklist → link in bio. Educational content only — not financial advice."*

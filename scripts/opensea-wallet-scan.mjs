@@ -98,7 +98,7 @@ async function scan(wallet) {
   md.push('---', '', '## Royal Ruby consolidation plan', '');
   md.push('Now that we know what lives in this wallet, here\'s how to fold it into the Royal Ruby brand:', '');
   md.push('1. **Re-describe high-value pieces** in Royal Ruby voice (see BRAND-BOOK.md) — OpenSea lets the holder edit metadata for items you own.');
-  md.push('2. **Cross-link** every piece back to `royalruby.co` in the OpenSea description footer.');
+  md.push('2. **Cross-link** every piece back to `royalruby.io` in the OpenSea description footer.');
   md.push('3. **Bundle related pieces** into a custom OpenSea gallery titled "Royal Ruby Archive" or "Royal Ruby Universe."');
   md.push('4. **List for sale** any pieces you\'re willing to part with at a clear floor — the listings themselves drive traffic to your profile.');
   md.push('5. **Mint NEW Ruby NFTs** from the same wallet so Royal Ruby appears in the creator sidebar.');

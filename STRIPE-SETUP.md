@@ -21,7 +21,7 @@ No Stripe secret keys live in this repo. Payment Links are public URLs; Stripe h
    - [x] Collect customer email (needed for delivery)
    - [x] Collect billing address (helps with card auth + dispute defense)
    - [x] Limit to 1 purchase per customer (optional)
-   - [x] After payment → **Show confirmation page** → custom message with the download link OR redirect to `https://royalruby.co/thanks.html?paid=1`
+   - [x] After payment → **Show confirmation page** → custom message with the download link OR redirect to `https://royalruby.io/thanks.html?paid=1`
 3. **Create link**
 4. Copy the URL — it looks like `https://buy.stripe.com/aEUxxxxxxxxxxx`
 
@@ -67,8 +67,8 @@ Pick one. Simplest first:
 ### Option A — Stripe confirmation page link (zero code)
 On the Payment Link's "After payment" settings, paste a direct link to the product PDF or a Gumroad/Google Drive download URL. Stripe shows it on the confirmation page, sends it in the receipt email.
 
-### Option B — Redirect to a gated page on royalruby.co
-Set "After payment" → redirect to `https://royalruby.co/thanks.html?paid=1`. Then add a small JS block that reveals a download button if `?paid=1` is in the URL. (Weak gate — determined users can guess the URL — but fine for $17 products.)
+### Option B — Redirect to a gated page on royalruby.io
+Set "After payment" → redirect to `https://royalruby.io/thanks.html?paid=1`. Then add a small JS block that reveals a download button if `?paid=1` is in the URL. (Weak gate — determined users can guess the URL — but fine for $17 products.)
 
 ### Option C — Stripe webhook → send email (real, later)
 Requires a backend. Out of scope for the static site. Revisit when you migrate to a real app.

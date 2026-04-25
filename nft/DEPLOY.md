@@ -86,7 +86,7 @@ forge create src/RubyDisputeVaultPass.sol:RubyDisputeVaultPass \
 4. Upload the `metadata` folder to web3.storage → copy the folder CID
 5. Your base URI is now `ipfs://<metadata-folder-cid>/`
 
-**Unlockable content (the actual PDF):** OpenSea has a per-item "unlockable content" field. After mint, edit the collection on OpenSea and paste the secret download link (a Gumroad hidden product URL or a password-protected page on royalruby.co). Only the current holder can see it.
+**Unlockable content (the actual PDF):** OpenSea has a per-item "unlockable content" field. After mint, edit the collection on OpenSea and paste the secret download link (a Gumroad hidden product URL or a password-protected page on royalruby.io). Only the current holder can see it.
 
 ---
 
@@ -134,7 +134,7 @@ Two options:
 
 **Option A — OpenSea only.** Cheapest. Buyers go to `https://opensea.io/collection/ruby-dispute-vault-pass` and mint directly. No custom UI. Done.
 
-**Option B — Branded mint page on royalruby.co.** Use `thirdweb` or `wagmi + RainbowKit` to build a simple "Connect wallet → Mint" button on a new page `/nft.html`. Walk-me-through files live in `nft/mint-page/` (not generated yet — ask when ready).
+**Option B — Branded mint page on royalruby.io.** Use `thirdweb` or `wagmi + RainbowKit` to build a simple "Connect wallet → Mint" button on a new page `/nft.html`. Walk-me-through files live in `nft/mint-page/` (not generated yet — ask when ready).
 
 For launch, go with A. It's instant and free.
 
@@ -142,7 +142,7 @@ For launch, go with A. It's instant and free.
 
 ## Step 7 — Promote the mint in content
 
-In the TikTok batch, the "Ruby Dispute Vault" CTA points to `royalruby.co/tt`. Update it to also mention the NFT drop for the crypto-curious audience. Suggested overlay on one video: **"500 passes. Base network. Link in bio."**
+In the TikTok batch, the "Ruby Dispute Vault" CTA points to `royalruby.io/tt`. Update it to also mention the NFT drop for the crypto-curious audience. Suggested overlay on one video: **"500 passes. Base network. Link in bio."**
 
 Add a new button on the site landing page: **"Hold a Pass → Unlock the Vault + join Diamond Kava"**. I can wire this when you have the contract address.
 

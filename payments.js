@@ -19,7 +19,7 @@
     'ruby-starter-pack': {
       name: 'Ruby Starter Pack',
       price: 17,
-      url: 'https://buy.stripe.com/6oUeVdbl32Ed4EP8bv7Re01',
+      url: 'https://buy.stripe.com/5kQ4gz9cV1A94EP0J37Re02',
       ctaLive: 'Get the Starter Pack — $17',
       ctaWaitlist: 'Join the Starter Pack waitlist',
     },
@@ -30,10 +30,10 @@
       ctaLive: 'Unlock the Dispute Vault — $47',
       ctaWaitlist: 'Join the Dispute Vault waitlist',
     },
-    'ruby-credit-stacker': {
+    'credit-stacker': {
       name: 'Ruby Credit Stacker',
       price: 97,
-      url: '',
+      url: 'https://buy.stripe.com/6oU14n0GpceN9Z90J37Re04',
       ctaLive: 'Get the Credit Stacker — $97',
       ctaWaitlist: 'Join the Credit Stacker waitlist',
     },

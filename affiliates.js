@@ -7,8 +7,8 @@
  *   - every Stripe Payment Link click as a `client_reference_id`
  *
  * Affiliate links look like:
- *   https://royalruby.co/?ref=marigny
- *   https://royalruby.co/tt?ref=janedoe
+ *   https://royalruby.io/?ref=marigny
+ *   https://royalruby.io/tt?ref=janedoe
  *
  * To register an affiliate, nothing to do here — just share the link and check
  * Stripe's Dashboard → Payments → search by client_reference_id, or check the

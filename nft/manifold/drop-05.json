@@ -11,7 +11,7 @@
     "description": "A direct-address meditation on wealth, systems, and who gets taught this at the dinner table.",
     "image": "ipfs://REPLACE_WITH_ART_CID/5.png",
     "animation_url": "ipfs://REPLACE_WITH_VIDEO_CID/05-single-mom.mp4",
-    "external_url": "https://royalruby.co/nft"
+    "external_url": "https://royalruby.io/nft"
   },
   "claim": {
     "type": "open",
@@ -22,7 +22,7 @@
     "walletMax": 10,
     "royaltyBps": 500
   },
-  "unlockableContent": "**Printable affirmation card designed by Royal Ruby**\n\nDownload: https://royalruby.co/unlock/05",
+  "unlockableContent": "**Printable affirmation card designed by Royal Ruby**\n\nDownload: https://royalruby.io/unlock/05",
   "attributes": [
     {
       "trait_type": "Series",

@@ -8,6 +8,6 @@
     { "t": 10.0, "d": 5.0, "kicker": "AND",        "line": "They age off completely",       "accent": "after 24 months." },
     { "t": 15.0, "d": 5.0, "kicker": "MEANING",    "line": "Every shopping spree",          "accent": "has an expiration date." },
     { "t": 20.0, "d": 5.0, "kicker": "PLAN",       "line": "Apply in clusters.",             "accent": "Then go quiet." },
-    { "t": 25.0, "d": 5.0, "kicker": "DETAIL",     "line": "Full rules →",                   "accent": "royalruby.co/tt" }
+    { "t": 25.0, "d": 5.0, "kicker": "DETAIL",     "line": "Full rules →",                   "accent": "royalruby.io/tt" }
   ]
 }

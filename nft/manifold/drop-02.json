@@ -11,7 +11,7 @@
     "description": "The three-move credit reset Dr. Marigny walks his community through. Not theory \u2014 the exact sequence that works.",
     "image": "ipfs://REPLACE_WITH_ART_CID/2.png",
     "animation_url": "ipfs://REPLACE_WITH_VIDEO_CID/02-540-to-680.mp4",
-    "external_url": "https://royalruby.co/nft"
+    "external_url": "https://royalruby.io/nft"
   },
   "claim": {
     "type": "open",
@@ -22,7 +22,7 @@
     "walletMax": 10,
     "royaltyBps": 500
   },
-  "unlockableContent": "**90-day cadence calendar (PDF) + week-by-week checklist**\n\nDownload: https://royalruby.co/unlock/02",
+  "unlockableContent": "**90-day cadence calendar (PDF) + week-by-week checklist**\n\nDownload: https://royalruby.io/unlock/02",
   "attributes": [
     {
       "trait_type": "Series",

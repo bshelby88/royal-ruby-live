@@ -8,6 +8,6 @@
     { "t": 10.0, "d": 5.0, "kicker": "DUNS",       "line": "Register at",                    "accent": "dnb.com — free." },
     { "t": 15.0, "d": 5.0, "kicker": "STACK",      "line": "Net-30 vendors report.",        "accent": "Uline. Grainger. Quill." },
     { "t": 20.0, "d": 5.0, "kicker": "RESULT",     "line": "$50K in business credit",       "accent": "without touching personal." },
-    { "t": 25.0, "d": 5.0, "kicker": "PLAYBOOK",   "line": "The full ladder →",              "accent": "royalruby.co/tt" }
+    { "t": 25.0, "d": 5.0, "kicker": "PLAYBOOK",   "line": "The full ladder →",              "accent": "royalruby.io/tt" }
   ]
 }

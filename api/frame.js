@@ -12,18 +12,18 @@
  * Frame protocol reference: https://docs.farcaster.xyz/reference/frames/spec
  *
  * Env vars needed:
- *   FRAME_HOST                  e.g. https://royalruby.co
+ *   FRAME_HOST                  e.g. https://royalruby.io
  *   WISDOM_CONTRACT_ADDRESS     0x... (after deploy)
  *
  * Usage in a cast:
- *   Post to Warpcast: "Royal Ruby Wisdom Drop #1 — mint on Base. https://royalruby.co/api/frame?drop=1"
+ *   Post to Warpcast: "Royal Ruby Wisdom Drop #1 — mint on Base. https://royalruby.io/api/frame?drop=1"
  *   Warpcast will auto-render the frame inline.
  */
 
 export const config = { runtime: 'edge' };
 
 const TOTAL_DROPS = 10;
-const HOST = process.env.FRAME_HOST || 'https://royalruby.co';
+const HOST = process.env.FRAME_HOST || 'https://royalruby.io';
 const CHAIN_ID = 8453; // Base mainnet
 const MINT_PRICE_WEI = '2500000000000000'; // 0.0025 ETH
 

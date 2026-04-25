@@ -8,6 +8,6 @@
     { "t": 10.0, "d": 5.0, "kicker": "REQUIRE",  "line": "Long history.",                   "accent": "High limit. Low balance." },
     { "t": 15.0, "d": 5.0, "kicker": "YOUR JOB", "line": "Don't touch the card.",            "accent": "Ever." },
     { "t": 20.0, "d": 5.0, "kicker": "LIFT",     "line": "Score can move",                   "accent": "30 to 80 points in 60 days." },
-    { "t": 25.0, "d": 5.0, "kicker": "CHECKLIST","line": "royalruby.co/tt",                  "accent": "The rules are there." }
+    { "t": 25.0, "d": 5.0, "kicker": "CHECKLIST","line": "royalruby.io/tt",                  "accent": "The rules are there." }
   ]
 }

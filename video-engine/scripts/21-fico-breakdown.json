@@ -8,6 +8,6 @@
     { "t": 10.0, "d": 5.0, "kicker": "30%",        "line": "Utilization",                    "accent": "— the fastest to fix." },
     { "t": 15.0, "d": 5.0, "kicker": "15%",        "line": "Length of history",              "accent": "— time doesn't rush." },
     { "t": 20.0, "d": 5.0, "kicker": "10% / 10%",  "line": "New credit + mix",               "accent": "— the minor tweaks." },
-    { "t": 25.0, "d": 5.0, "kicker": "PLAYBOOK",   "line": "How to hit each →",             "accent": "royalruby.co/tt" }
+    { "t": 25.0, "d": 5.0, "kicker": "PLAYBOOK",   "line": "How to hit each →",             "accent": "royalruby.io/tt" }
   ]
 }

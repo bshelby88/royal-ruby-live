@@ -6,7 +6,7 @@ A single document Dr. Marigny can read in 5 minutes to understand where we are, 
 
 ## The headline
 
-**Royal Ruby is live at [royalruby.co](https://royalruby.co).** The free 90-day credit reset checklist is published, the email capture is wired, and the Ruby Starter Pack is accepting real payments via Stripe right now at $17. Ninety percent of the infrastructure is done.
+**Royal Ruby is live at [royalruby.io](https://royalruby.io).** The free 90-day credit reset checklist is published, the email capture is wired, and the Ruby Starter Pack is accepting real payments via Stripe right now at $17. Ninety percent of the infrastructure is done.
 
 What we need to turn on the revenue: **your voice on camera.**
 
@@ -16,8 +16,8 @@ What we need to turn on the revenue: **your voice on camera.**
 
 | Piece | Status | Link |
 |---|---|---|
-| Landing page + email capture | ✅ Live | royalruby.co |
-| Free 90-day checklist (5 pages) | ✅ Live | royalruby.co/read |
+| Landing page + email capture | ✅ Live | royalruby.io |
+| Free 90-day checklist (5 pages) | ✅ Live | royalruby.io/read |
 | Ruby Starter Pack — $17 | ✅ Accepting payments | embedded on landing page |
 | TikTok/IG/YT/FB bio short links | ✅ Tracked | see below |
 | 5 ready-to-film video scripts | ✅ Drafted | see below |
@@ -61,10 +61,10 @@ Each platform gets its own link so we can see which platform is actually driving
 
 | Platform | Bio link to paste |
 |---|---|
-| TikTok | `royalruby.co/tt` |
-| Instagram | `royalruby.co/ig` |
-| YouTube | `royalruby.co/yt` |
-| Facebook | `royalruby.co/fb` |
+| TikTok | `royalruby.io/tt` |
+| Instagram | `royalruby.io/ig` |
+| YouTube | `royalruby.io/yt` |
+| Facebook | `royalruby.io/fb` |
 
 All four redirect to the same homepage. The difference is we can tell which platform the click came from.
 

@@ -11,7 +11,7 @@
     "description": "Real letter, real 6-year-old collection, real eleven-day deletion. The three moves that made it work.",
     "image": "ipfs://REPLACE_WITH_ART_CID/8.png",
     "animation_url": "ipfs://REPLACE_WITH_VIDEO_CID/08-dispute-receipts.mp4",
-    "external_url": "https://royalruby.co/nft"
+    "external_url": "https://royalruby.io/nft"
   },
   "claim": {
     "type": "open",
@@ -22,7 +22,7 @@
     "walletMax": 10,
     "royaltyBps": 500
   },
-  "unlockableContent": "**Exact FCRA \u00a7 611 verification request template**\n\nDownload: https://royalruby.co/unlock/08",
+  "unlockableContent": "**Exact FCRA \u00a7 611 verification request template**\n\nDownload: https://royalruby.io/unlock/08",
   "attributes": [
     {
       "trait_type": "Series",

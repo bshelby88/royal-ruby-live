@@ -50,7 +50,7 @@ Each file has:
 ### 5. Upload unlockable content
 In Manifold's unlockable content field, paste:
 - A link to a hidden Gumroad download for the script/worksheet, OR
-- A password-protected page URL on `royalruby.co/unlock/<slug>`, OR
+- A password-protected page URL on `royalruby.io/unlock/<slug>`, OR
 - Direct text content (Manifold supports rich-text unlockables)
 
 ### 6. Publish

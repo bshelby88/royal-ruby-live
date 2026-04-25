@@ -8,6 +8,6 @@
     { "t": 10.0, "d": 5.0, "kicker": "EMAILS",  "line": "Checking the mail.",             "accent": "Checking the portal." },
     { "t": 15.0, "d": 5.0, "kicker": "THEN",    "line": "One day —",                      "accent": "your score is different." },
     { "t": 20.0, "d": 5.0, "kicker": "QUIET",   "line": "Not dramatic.",                  "accent": "Just different." },
-    { "t": 25.0, "d": 5.0, "kicker": "STAY",    "line": "with it.",                        "accent": "royalruby.co/tt" }
+    { "t": 25.0, "d": 5.0, "kicker": "STAY",    "line": "with it.",                        "accent": "royalruby.io/tt" }
   ]
 }

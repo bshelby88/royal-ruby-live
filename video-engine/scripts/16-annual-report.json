@@ -8,6 +8,6 @@
     { "t": 10.0, "d": 5.0, "kicker": "WHY",         "line": "The bureaus must give it.",   "accent": "Every 12 months. Free." },
     { "t": 15.0, "d": 5.0, "kicker": "NOT",         "line": "CreditKarma. Not Experian.",  "accent": "Not your bank." },
     { "t": 20.0, "d": 5.0, "kicker": "PULL",        "line": "All three bureaus.",           "accent": "Same day. Every year." },
-    { "t": 25.0, "d": 5.0, "kicker": "FREE",        "line": "royalruby.co/tt",              "accent": "for what to do next." }
+    { "t": 25.0, "d": 5.0, "kicker": "FREE",        "line": "royalruby.io/tt",              "accent": "for what to do next." }
   ]
 }

@@ -12,7 +12,7 @@ You have one creator (Dr. Marigny), one content engine (the shared TikTok/IG pip
                                │
                                ▼
                      FREE CHECKLIST (hook)
-                     royalruby.co (email capture)
+                     royalruby.io (email capture)
                                │
             ┌──────────────────┼──────────────────┐
             ▼                  ▼                  ▼
@@ -45,10 +45,10 @@ If you only run Stripe, you miss the Gumroad creator-economy crowd and the crypt
 
 **One video shoot feeds all four platforms and all three rails.** The same 25-second kinetic-typography reel can:
 
-1. Drive a TikTok viewer → `royalruby.co/tt` → free checklist → Stripe $17 upsell
-2. Drive an IG Reels viewer → `royalruby.co/ig` → free checklist → Gumroad $47 (via Marigny's affiliate link)
-3. Drive a Twitter follower → `royalruby.co/x` → NFT mint page on Base
-4. Drive a YouTube Shorts viewer → `royalruby.co/yt` → checklist → any rail
+1. Drive a TikTok viewer → `royalruby.io/tt` → free checklist → Stripe $17 upsell
+2. Drive an IG Reels viewer → `royalruby.io/ig` → free checklist → Gumroad $47 (via Marigny's affiliate link)
+3. Drive a Twitter follower → `royalruby.io/x` → NFT mint page on Base
+4. Drive a YouTube Shorts viewer → `royalruby.io/yt` → checklist → any rail
 
 One asset, four surfaces, three rails, all tracked via UTM.
 

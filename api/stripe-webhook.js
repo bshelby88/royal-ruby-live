@@ -13,7 +13,7 @@
  * Env vars required (set in Vercel dashboard → Project → Environment):
  *   STRIPE_WEBHOOK_SECRET       whsec_... — from Stripe Dashboard → Webhooks
  *   RESEND_API_KEY              re_... — from resend.com (free tier: 100/day)
- *   RESEND_FROM                 "Royal Ruby <hello@royalruby.co>"
+ *   RESEND_FROM                 "Royal Ruby <hello@royalruby.io>"
  *   RESEND_REPLY_TO             jadedfocus@gmail.com
  *   RR_STARTER_PACK_URL         https://... (hidden Gumroad or signed S3 link)
  *   RR_DISPUTE_VAULT_URL        https://...
@@ -21,7 +21,7 @@
  *
  * Wire up in Stripe:
  *   Dashboard → Developers → Webhooks → + Add endpoint
- *   URL: https://royalruby.co/api/stripe-webhook
+ *   URL: https://royalruby.io/api/stripe-webhook
  *   Event: checkout.session.completed
  *   Copy the signing secret → Vercel env var STRIPE_WEBHOOK_SECRET → redeploy
  */

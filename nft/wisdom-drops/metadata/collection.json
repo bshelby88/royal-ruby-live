@@ -2,7 +2,7 @@
   "name": "Ruby Wisdom Drops",
   "description": "Ten short-form credit-education video NFTs from Dr. Herman Marigny III and Royal Ruby. Each drop is a 20\u201330 second wisdom reel \u2014 a single myth, mistake, or move \u2014 with unlockable content including scripts, worksheets, and printables. Open-edition minting on Base. Holders get auto-enrollment in the Diamond/Kava community and early access to future Ruby drops.\n\nEducational content only. Not legal or financial advice.",
   "image": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/art/1.png",
-  "external_link": "https://royalruby.co",
+  "external_link": "https://royalruby.io",
   "seller_fee_basis_points": 500,
   "fee_recipient": "REPLACE_WITH_TREASURY_ADDRESS"
 }

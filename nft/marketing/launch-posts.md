@@ -4,8 +4,8 @@ Copy-paste ready social posts for all four platforms, for each of the 10 drops. 
 
 Replace:
 - `{{OPENSEA_URL}}` — the OpenSea collection URL, e.g. `https://opensea.io/collection/ruby-wisdom-drops`
-- `{{MINT_URL}}` — the direct mint URL, e.g. `https://royalruby.co/nft?drop=1`
-- `{{FRAME_URL}}` — the Farcaster Frame URL, e.g. `https://royalruby.co/api/frame?drop=1`
+- `{{MINT_URL}}` — the direct mint URL, e.g. `https://royalruby.io/nft?drop=1`
+- `{{FRAME_URL}}` — the Farcaster Frame URL, e.g. `https://royalruby.io/api/frame?drop=1`
 - `{{CONTRACT}}` — deployed contract address
 
 ---

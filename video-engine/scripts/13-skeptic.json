@@ -9,6 +9,6 @@
     { "t": 10.5, "d": 3.5, "kicker": "WHY",          "line": "Because wealth",               "accent": "isn't a paywall." },
     { "t": 14.0, "d": 3.5, "kicker": "IT'S",        "line": "a set of habits.",              "accent": "Habits don't cost." },
     { "t": 17.5, "d": 3.5, "kicker": "IF",          "line": "the free version works,",       "accent": "you win." },
-    { "t": 21.0, "d": 3.0, "kicker": "FREE",        "line": "royalruby.co/tt",                "accent": "No catches." }
+    { "t": 21.0, "d": 3.0, "kicker": "FREE",        "line": "royalruby.io/tt",                "accent": "No catches." }
   ]
 }

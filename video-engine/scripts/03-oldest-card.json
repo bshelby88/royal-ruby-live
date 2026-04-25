@@ -8,6 +8,6 @@
     { "t": 7.5,  "d": 4.0, "kicker": "THE HIT",   "line": "Close it and your average",    "accent": "drops overnight." },
     { "t": 11.5, "d": 4.0, "kicker": "THE FIX",   "line": "One small recurring charge.",  "accent": "Set and forget." },
     { "t": 15.5, "d": 3.5, "kicker": "EXAMPLE",   "line": "Netflix on autopay.",          "accent": "That's it." },
-    { "t": 19.0, "d": 5.0, "kicker": "MORE",      "line": "5 quiet killers →",            "accent": "royalruby.co/tt" }
+    { "t": 19.0, "d": 5.0, "kicker": "MORE",      "line": "5 quiet killers →",            "accent": "royalruby.io/tt" }
   ]
 }

@@ -11,7 +11,7 @@
     "description": "The minimum-viable financial legacy kit every family should have on a single USB drive.",
     "image": "ipfs://REPLACE_WITH_ART_CID/10.png",
     "animation_url": "ipfs://REPLACE_WITH_VIDEO_CID/10-usb-cliffhanger.mp4",
-    "external_url": "https://royalruby.co/nft"
+    "external_url": "https://royalruby.io/nft"
   },
   "claim": {
     "type": "open",
@@ -22,7 +22,7 @@
     "walletMax": 10,
     "royaltyBps": 500
   },
-  "unlockableContent": "**Preview of the Ruby Starter Pack + 4-document bundle template**\n\nDownload: https://royalruby.co/unlock/10",
+  "unlockableContent": "**Preview of the Ruby Starter Pack + 4-document bundle template**\n\nDownload: https://royalruby.io/unlock/10",
   "attributes": [
     {
       "trait_type": "Series",

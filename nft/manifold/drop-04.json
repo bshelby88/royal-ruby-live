@@ -11,7 +11,7 @@
     "description": "Utilization is 30% of your FICO and most people get the timing wrong. Here's what actually moves the score.",
     "image": "ipfs://REPLACE_WITH_ART_CID/4.png",
     "animation_url": "ipfs://REPLACE_WITH_VIDEO_CID/04-utilization.mp4",
-    "external_url": "https://royalruby.co/nft"
+    "external_url": "https://royalruby.io/nft"
   },
   "claim": {
     "type": "open",
@@ -22,7 +22,7 @@
     "walletMax": 10,
     "royaltyBps": 500
   },
-  "unlockableContent": "**Statement-date tracker spreadsheet (Google Sheet template)**\n\nCopy: https://royalruby.co/unlock/04",
+  "unlockableContent": "**Statement-date tracker spreadsheet (Google Sheet template)**\n\nCopy: https://royalruby.io/unlock/04",
   "attributes": [
     {
       "trait_type": "Series",

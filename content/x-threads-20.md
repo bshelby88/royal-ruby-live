@@ -41,7 +41,7 @@ Read them line by line. Flag anything you don't recognize.
 
 It's free. Forever.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -75,7 +75,7 @@ That's how you close 100+ points.
 
 6/ The free reset checklist walks through it step by step.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -101,7 +101,7 @@ One habit. Twenty points. No effort.
 
 5/ This is one of five quiet killers on the free 90-day checklist.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -129,7 +129,7 @@ The key: the reported balance is low, not the paid balance.
 
 6/ Worth 20 to 40 points for most people.
 
-Free 90-day checklist: {{LINK: royalruby.co/tt}}
+Free 90-day checklist: {{LINK: royalruby.io/tt}}
 
 ---
 
@@ -157,7 +157,7 @@ Because wealth isn't a paywall. It's a set of habits. And habits don't cost mone
 
 He's coached 2,000+ families. He's not guessing.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -184,7 +184,7 @@ You have a federal right to demand removal.
 
 4/ The exact dispute letter is in the Ruby checklist. Free.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -212,7 +212,7 @@ Option C — Let the clock run.
 
 5/ The free 90-day checklist walks through when to dispute, when to negotiate, and when to wait.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -243,7 +243,7 @@ Most agencies can't meet the second standard.
 
 But the free checklist teaches you if you even need to send one yet.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -271,7 +271,7 @@ If they have a 12-year history and a $15K limit at 5% utilization — you inheri
 
 This isn't a scam. It's how authorized user tradelines work. Legal, ancient, and criminally under-used.
 
-5/ Full rules + who to ask: {{LINK: royalruby.co/tt}}
+5/ Full rules + who to ask: {{LINK: royalruby.io/tt}}
 
 ---
 
@@ -301,7 +301,7 @@ After 12 months, real business credit cards are available.
 
 But the playbook starts in the free checklist.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -325,7 +325,7 @@ Also also: if one card gets frozen, compromised, or closed, you still have two o
 
 4/ Which 3 to pick is the next question. Not just any three — the checklist has a ranking.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -353,7 +353,7 @@ Pick freeze. Always freeze.
 
 Lock is the paid upsell. Freeze is the right. Pick the right one.
 
-5/ 15-minute walkthrough in the free checklist. {{LINK: royalruby.co/tt}}
+5/ 15-minute walkthrough in the free checklist. {{LINK: royalruby.io/tt}}
 
 ---
 
@@ -379,7 +379,7 @@ Then go QUIET for 18 months. Let the clock run.
 
 4/ Don't apply out of boredom. Every "just to check" hard pull is a score hit that doesn't come back for 24 months.
 
-5/ Full inquiry strategy in the checklist. {{LINK: royalruby.co/tt}}
+5/ Full inquiry strategy in the checklist. {{LINK: royalruby.io/tt}}
 
 ---
 
@@ -405,7 +405,7 @@ It's five numbers in a trench coat.
 
 Every piece of advice you read online fits in one of those five buckets.
 
-5/ The 90-day plan that hits each one: {{LINK: royalruby.co/tt}}
+5/ The 90-day plan that hits each one: {{LINK: royalruby.io/tt}}
 
 ---
 
@@ -433,7 +433,7 @@ Autopay is free insurance against your own bad days.
 
 4/ The first page of the checklist walks through how to set this up if you've never done it.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -455,7 +455,7 @@ Pick where you are.
 
 6/ No subscriptions. No upsells after purchase. Each one stands alone.
 
-Start with the free checklist: {{LINK: royalruby.co/tt}}
+Start with the free checklist: {{LINK: royalruby.io/tt}}
 
 ---
 
@@ -479,7 +479,7 @@ It's not shameful. It's an invitation.
 
 5/ Free 90-day reset checklist. Go steward.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -499,7 +499,7 @@ The same system a millionaire uses. The only difference is they learned it at th
 
 4/ Start with your credit. It's the cheapest money you'll ever access. And the first move is free.
 
-{{LINK: royalruby.co/tt}}
+{{LINK: royalruby.io/tt}}
 
 ---
 
@@ -525,7 +525,7 @@ Because the best coaching used to die in a TikTok algorithm. Onchain, it lives f
 
 4/ Ten drops. Ten days. Then the flagship.
 
-Mint page: royalruby.co/nft
+Mint page: royalruby.io/nft
 Collection: opensea.io/collection/ruby-wisdom-drops (live soon)
 
 ---
@@ -546,7 +546,7 @@ Collection: opensea.io/collection/ruby-wisdom-drops (live soon)
 
 4/ That's what media-as-asset looks like.
 
-5/ Everything public lives at {{LINK: royalruby.co}}
+5/ Everything public lives at {{LINK: royalruby.io}}
 
 The story starts tomorrow with the first Wisdom Drop.
 
