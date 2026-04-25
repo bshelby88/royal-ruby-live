@@ -607,6 +607,17 @@
         <input type="text" name="first_name" placeholder="First name" required autocomplete="given-name" />
         <input type="email" name="email" placeholder="Your best email" required autocomplete="email" />
         <input type="hidden" name="source" value="landing-v1" />
+        <!-- UTM attribution — populated from the URL query string at page load.
+             Lets each Formspree submission surface which channel sent the visitor
+             (e.g. /tt vercel-redirect adds utm_source=tiktok). Referrer is a
+             fallback for organic arrivals without UTMs. -->
+        <input type="hidden" name="utm_source" />
+        <input type="hidden" name="utm_medium" />
+        <input type="hidden" name="utm_campaign" />
+        <input type="hidden" name="utm_content" />
+        <input type="hidden" name="utm_term" />
+        <input type="hidden" name="referrer" />
+        <input type="hidden" name="landing_path" />
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
         <button type="submit">Get the checklist &rarr;</button>
       </form>
@@ -804,6 +815,23 @@
   (function() {
     const form = document.getElementById('signup');
     if (!form) return;
+
+    // Populate hidden UTM + referrer + path fields at page load so every
+    // submission carries attribution. Vercel redirects (/tt, /ig, /yt, /x,
+    // /fb, /buy) tag visitors with utm_source on entry; this propagates
+    // those tags into Formspree so each Gmail signup email shows the channel.
+    (function captureAttribution() {
+      const params = new URLSearchParams(window.location.search);
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function(k) {
+        const el = form.querySelector('input[name="' + k + '"]');
+        if (el && params.has(k)) el.value = params.get(k);
+      });
+      const ref = form.querySelector('input[name="referrer"]');
+      if (ref) ref.value = document.referrer || '';
+      const path = form.querySelector('input[name="landing_path"]');
+      if (path) path.value = window.location.pathname + window.location.search;
+    })();
+
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
       const action = form.getAttribute('action');
