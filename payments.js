@@ -19,21 +19,21 @@
     'ruby-starter-pack': {
       name: 'Ruby Starter Pack',
       price: 17,
-      url: 'https://buy.stripe.com/5kQ4gz9cV1A94EP0J37Re02',
+      url: 'https://sentry-forge.lemonsqueezy.com/checkout/buy/02411b11-3c90-48fc-945f-288092d831ec',
       ctaLive: 'Get the Starter Pack — $17',
       ctaWaitlist: 'Join the Starter Pack waitlist',
     },
     'ruby-dispute-vault': {
       name: 'Ruby Dispute Vault',
       price: 47,
-      url: 'https://buy.stripe.com/bJe9ATbl3gv32wH1N77Re03',
+      url: 'https://sentry-forge.lemonsqueezy.com/checkout/buy/ba676d55-3a2f-417e-b6f3-bf065251b862',
       ctaLive: 'Unlock the Dispute Vault — $47',
       ctaWaitlist: 'Join the Dispute Vault waitlist',
     },
     'credit-stacker': {
       name: 'Ruby Credit Stacker',
       price: 97,
-      url: 'https://buy.stripe.com/6oU14n0GpceN9Z90J37Re04',
+      url: 'https://sentry-forge.lemonsqueezy.com/checkout/buy/869556bb-e747-477d-a4e5-67edf9743883',
       ctaLive: 'Get the Credit Stacker — $97',
       ctaWaitlist: 'Join the Credit Stacker waitlist',
     },
@@ -46,7 +46,7 @@
       const product = PRODUCTS[slug];
       if (!product) return;
 
-      const hasLiveLink = typeof product.url === 'string' && product.url.startsWith('https://buy.stripe.com/');
+      const hasLiveLink = typeof product.url === 'string' && (product.url.startsWith('https://buy.stripe.com/') || product.url.includes('lemonsqueezy.com'));
 
       if (hasLiveLink) {
         el.setAttribute('href', product.url);

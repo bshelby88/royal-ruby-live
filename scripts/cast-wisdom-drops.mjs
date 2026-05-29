@@ -15,7 +15,7 @@
  * Env:
  *   NEYNAR_API_KEY      get from https://neynar.com (free tier)
  *   NEYNAR_SIGNER_UUID  approved signer UUID from the same dashboard
- *   FRAME_HOST          https://royalruby.io (default)
+ *   FRAME_HOST          https://royalruby.co (default)
  */
 
 import fs from 'node:fs';
@@ -40,7 +40,7 @@ function loadEnv() {
 }
 loadEnv();
 
-const HOST = process.env.FRAME_HOST || 'https://royalruby.io';
+const HOST = process.env.FRAME_HOST || 'https://royalruby.co';
 
 const CASTS = [
   { id: 1,  text: "Drop #01 is live.\n\nMyth #1: The Soft Pull — a 26-second correction of the most common credit myth in America.\n\nMint on Base. 0.0025 ETH. Unlockable: the full script + a printable handout." },

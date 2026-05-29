@@ -41,7 +41,7 @@ def main() -> int:
                 f"Educational content. Not legal or financial advice."
             ),
             "image": f"ipfs://REPLACE_WITH_IMAGE_CID/{i}.png",
-            "external_url": "https://royalruby.io",
+            "external_url": "https://royalruby.co",
             "attributes": [
                 {"trait_type": "Tier",        "value": tier},
                 {"trait_type": "Edition",     "value": i},

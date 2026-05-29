@@ -15,7 +15,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const SITE = 'https://royal-ruby-theta.vercel.app';
+const SITE = process.env.SITE || 'https://royal-ruby-theta.vercel.app';
 
 const GREEN = '\x1b[32m';
 const RED = '\x1b[31m';
@@ -89,11 +89,11 @@ async function main() {
     }
   }
 
-  // ---- stripe link wired ----
-  console.log('\nSTRIPE');
+  // ---- lemonsqueezy link wired ----
+  console.log('\nLEMONSQUEEZY');
   {
-    const r = await probe(SITE + '/payments.js', { mustContain: 'buy.stripe.com/' });
-    r.ok ? ok('starter pack Stripe URL present') : nope('starter pack Stripe URL missing');
+    const r = await probe(SITE + '/payments.js', { mustContain: 'lemonsqueezy.com' });
+    r.ok ? ok('starter pack LemonSqueezy URL present') : nope('starter pack LemonSqueezy URL missing');
   }
 
   // ---- api endpoints ----

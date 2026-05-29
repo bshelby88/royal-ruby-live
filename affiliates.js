@@ -7,8 +7,8 @@
  *   - every Stripe Payment Link click as a `client_reference_id`
  *
  * Affiliate links look like:
- *   https://royalruby.io/?ref=marigny
- *   https://royalruby.io/tt?ref=janedoe
+ *   https://royalruby.co/?ref=marigny
+ *   https://royalruby.co/tt?ref=janedoe
  *
  * To register an affiliate, nothing to do here — just share the link and check
  * Stripe's Dashboard → Payments → search by client_reference_id, or check the
@@ -134,13 +134,20 @@
     });
   }
 
-  // 4. Append client_reference_id + utm_* to Stripe Payment Links
-  function decorateStripeLinks() {
-    document.querySelectorAll('a[href*="buy.stripe.com"]').forEach((a) => {
+  // 4. Append client_reference_id + utm_* to Stripe and LemonSqueezy Payment Links
+  function decoratePaymentLinks() {
+    document.querySelectorAll('a[href*="buy.stripe.com"], a[href*="lemonsqueezy.com"]').forEach((a) => {
       try {
         const url = new URL(a.href);
-        if (current && !url.searchParams.has('client_reference_id')) {
-          url.searchParams.set('client_reference_id', current);
+        const isStripe = url.hostname.includes('stripe.com');
+        const isLS = url.hostname.includes('lemonsqueezy.com');
+
+        if (current) {
+          if (isStripe && !url.searchParams.has('client_reference_id')) {
+            url.searchParams.set('client_reference_id', current);
+          } else if (isLS && !url.searchParams.has('checkout[custom][affiliate]')) {
+            url.searchParams.set('checkout[custom][affiliate]', current);
+          }
         }
         UTM_KEYS.forEach((k) => {
           if (utms[k] && !url.searchParams.has(k)) {
@@ -154,7 +161,7 @@
 
   function run() {
     injectIntoForms();
-    decorateStripeLinks();
+    decoratePaymentLinks();
   }
 
   if (document.readyState === 'loading') {
@@ -164,7 +171,7 @@
   }
 
   // Observe dynamic link changes (e.g., after payments.js rewrites)
-  const observer = new MutationObserver(() => decorateStripeLinks());
+  const observer = new MutationObserver(() => decoratePaymentLinks());
   observer.observe(document.body || document.documentElement, {
     subtree: true,
     childList: true,

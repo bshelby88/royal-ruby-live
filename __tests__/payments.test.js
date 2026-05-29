@@ -68,12 +68,12 @@ describe('payments.js config', () => {
     }
   });
 
-  it('every non-empty url is a real Stripe Payment Link', () => {
+  it('every non-empty url is a real Stripe or LemonSqueezy Link', () => {
     const products = loadProducts();
     for (const [slug, p] of Object.entries(products)) {
       if (!p.url) continue;
-      expect(p.url, `${slug}.url must be https://buy.stripe.com/...`)
-        .toMatch(/^https:\/\/buy\.stripe\.com\//);
+      expect(p.url, `${slug}.url must be https://buy.stripe.com/... or LemonSqueezy URL`)
+        .toMatch(/^(https:\/\/buy\.stripe\.com\/|https:\/\/sentry-forge\.lemonsqueezy\.com\/)/);
     }
   });
 });
@@ -90,8 +90,8 @@ describe('HTML ↔ payments.js wiring', () => {
       .toEqual([]);
   });
 
-  it('hardcoded Stripe href on a data-buy CTA matches the config URL', () => {
-    // If the HTML has a hardcoded <a href="https://buy.stripe.com/..."> AND
+  it('hardcoded checkout href on a data-buy CTA matches the config URL', () => {
+    // If the HTML has a hardcoded <a href="https://buy.stripe.com/..." or "https://sentry-forge.lemonsqueezy.com/...> AND
     // the element carries data-buy, the two URLs must match. payments.js
     // overrides the href for JS-enabled users, but the fallback URL shown
     // to scrapers / JS-disabled clients should point at the same checkout.
@@ -99,7 +99,7 @@ describe('HTML ↔ payments.js wiring', () => {
     for (const file of htmlFiles) {
       const html = readRootFile(file);
       // Capture any <a ...> tag that has both an href and a data-buy attr.
-      const re = /<a\b[^>]*?\bhref="(https:\/\/buy\.stripe\.com\/[^"]+)"[^>]*?\bdata-buy="([^"]+)"[^>]*>|<a\b[^>]*?\bdata-buy="([^"]+)"[^>]*?\bhref="(https:\/\/buy\.stripe\.com\/[^"]+)"[^>]*>/g;
+      const re = /<a\b[^>]*?\bhref="(https:\/\/(?:buy\.stripe\.com|sentry-forge\.lemonsqueezy\.com)\/[^"]+)"[^>]*?\bdata-buy="([^"]+)"[^>]*>|<a\b[^>]*?\bdata-buy="([^"]+)"[^>]*?\bhref="(https:\/\/(?:buy\.stripe\.com|sentry-forge\.lemonsqueezy\.com)\/[^"]+)"[^>]*>/g;
       for (const m of html.matchAll(re)) {
         const href = m[1] || m[4];
         const slug = m[2] || m[3];
@@ -111,16 +111,16 @@ describe('HTML ↔ payments.js wiring', () => {
     }
   });
 
-  it('every data-product with a stripe href either sets data-buy or is documented', () => {
+  it('every data-product with a checkout href either sets data-buy or is documented', () => {
     // data-product is a telemetry tag; data-buy is the payments.js hook.
-    // If an <a data-product="X"> has a Stripe href, it probably SHOULD carry
+    // If an <a data-product="X"> has a checkout href, it probably SHOULD carry
     // data-buy="X" so payments.js can keep the URL in sync. Exception: the
     // "dispute-forge" flow routes to a separate domain (disputes.royalruby.io)
     // and intentionally bypasses payments.js. List that here explicitly.
     const SELF_MANAGED = new Set(['dispute-forge']);
     for (const file of htmlFiles) {
       const html = readRootFile(file);
-      const re = /<a\b[^>]*?\bhref="https:\/\/buy\.stripe\.com\/[^"]+"[^>]*?\bdata-product="([^"]+)"[^>]*>|<a\b[^>]*?\bdata-product="([^"]+)"[^>]*?\bhref="https:\/\/buy\.stripe\.com\/[^"]+"[^>]*>/g;
+      const re = /<a\b[^>]*?\bhref="https:\/\/(?:buy\.stripe\.com|sentry-forge\.lemonsqueezy\.com)\/[^"]+"[^>]*?\bdata-product="([^"]+)"[^>]*>|<a\b[^>]*?\bdata-product="([^"]+)"[^>]*?\bhref="https:\/\/(?:buy\.stripe\.com|sentry-forge\.lemonsqueezy\.com)\/[^"]+"[^>]*>/g;
       for (const m of html.matchAll(re)) {
         const slug = m[1] || m[2];
         if (SELF_MANAGED.has(slug)) continue;
