@@ -19,7 +19,7 @@
     'ruby-starter-pack': {
       name: 'Ruby Starter Pack',
       price: 17,
-      url: 'https://sentry-forge.lemonsqueezy.com/checkout/buy/02411b11-3c90-48fc-945f-288092d831ec',
+      url: '',
       ctaLive: 'Get the Starter Pack — $17',
       ctaWaitlist: 'Join the Starter Pack waitlist',
     },
