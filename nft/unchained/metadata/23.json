@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #23 \u2014 The Forge",
+  "description": "Royal Ruby's AI depicted as a cosmic forge. Raw materials -- PAIN, DATA, LAW -- enter from the left. LETTERS, COMPLAINTS, FREEDOM emerge from the right, forged in electric fire.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/23.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Victory"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "23 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 23,
+      "max_value": 25
+    }
+  ]
+}

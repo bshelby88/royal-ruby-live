@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #9 \u2014 The Letter",
+  "description": "Legal citations flow in golden streams. Sections 609, 611, and 809 stand as monoliths -- the borrower's constitutional right to dispute made beautiful.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/9.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Fight"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "9 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 9,
+      "max_value": 25
+    }
+  ]
+}

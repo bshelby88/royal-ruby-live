@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #5 \u2014 The Inflation",
+  "description": "A $55K circle dwarfed by a $320K behemoth -- the silent explosion of compounding interest. Growth lines pulse red between them, mapping the 5.8x multiplication.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/5.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Weight"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "5 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 5,
+      "max_value": 25
+    }
+  ]
+}

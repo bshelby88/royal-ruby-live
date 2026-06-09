@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #6 \u2014 The Silence",
+  "description": "A nearly empty canvas. A single small envelope floats in vast darkness. 'NO RESPONSE' appears only if you look closely. The most unsettling piece in the collection.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/6.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Weight"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "6 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 6,
+      "max_value": 25
+    }
+  ]
+}

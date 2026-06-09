@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #11 \u2014 BEAN Awakens",
+  "description": "A neural network forms the shape of a guardian. Twelve tool icons orbit the brain -- DISPUTE, LETTER, AUDIT, GUARD. The AI agent comes alive.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/11.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Fight"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "11 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 11,
+      "max_value": 25
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #2 \u2014 The Fine Print",
+  "description": "Dense legal jargon spiralling into a vortex of confusion. FORBEARANCE, DEFERMENT, INTEREST -- the words designed to keep borrowers lost.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/2.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Weight"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "2 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 2,
+      "max_value": 25
+    }
+  ]
+}

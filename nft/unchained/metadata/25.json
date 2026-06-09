@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #25 \u2014 The Crown",
+  "description": "The Royal Ruby gemstone in full glory. Crown points rise above the gem. Every facet holds the number of a previous piece -- all 24 chapters reflected in the final masterwork.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/25.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Victory"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "25 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 25,
+      "max_value": 25
+    }
+  ]
+}

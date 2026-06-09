@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #21 \u2014 The Testimony",
+  "description": "A human silhouette stands at the centre of an explosion of data characters that form wings. The journey's data becomes the testimony -- and the testimony becomes flight.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/21.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Victory"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "21 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 21,
+      "max_value": 25
+    }
+  ]
+}

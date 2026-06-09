@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #7 \u2014 The Report",
+  "description": "An abstract credit report rendered as a data grid. Red marks scatter across 54 account dots. Numbers cascade in the background like falling debris.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/7.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Weight"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "7 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 7,
+      "max_value": 25
+    }
+  ]
+}

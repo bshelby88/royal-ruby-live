@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #19 \u2014 The Deletion",
+  "description": "A credit report line dissolves into particles that become stars. What was once a mark of shame transforms into a point of light in the night sky.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/19.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Victory"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "19 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 19,
+      "max_value": 25
+    }
+  ]
+}

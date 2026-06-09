@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #8 \u2014 The Spark",
+  "description": "A single point of electric blue light pierces the darkness. Code fragments radiate outward -- 'import dispute_forge' -- the first line of defence is written.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/8.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Fight"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "8 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 8,
+      "max_value": 25
+    }
+  ]
+}

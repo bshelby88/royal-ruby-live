@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #24 \u2014 The Movement",
+  "description": "Multiple figures standing in unity, each holding a glowing document. Rows recede toward the horizon. One borrower became many. The movement is here.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/24.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Victory"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "24 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 24,
+      "max_value": 25
+    }
+  ]
+}

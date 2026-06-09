@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #3 \u2014 The Forbearance Trap",
+  "description": "A golden hexagonal cage imprisons a glowing ruby -- beautiful but inescapable. Interest percentages spiral around the perimeter, compounding endlessly.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/3.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Weight"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "3 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 3,
+      "max_value": 25
+    }
+  ]
+}

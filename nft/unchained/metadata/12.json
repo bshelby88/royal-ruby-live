@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #12 \u2014 The Arsenal",
+  "description": "33 dispute letters arranged in a golden spiral. Each rectangle is a slightly different shade -- no two letters are identical, every argument tailored.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/12.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Fight"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "12 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 12,
+      "max_value": 25
+    }
+  ]
+}

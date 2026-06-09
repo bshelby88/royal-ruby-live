@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #10 \u2014 The 15-Day Clock",
+  "description": "A cosmic hourglass. The top half churns with chaos; the bottom half arranges itself into order. '15' glows at the neck -- the days a bureau has to respond or delete.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/10.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Fight"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "10 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 10,
+      "max_value": 25
+    }
+  ]
+}

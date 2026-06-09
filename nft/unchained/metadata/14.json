@@ -1,0 +1,30 @@
+{
+  "name": "UNCHAINED #14 \u2014 The Audit",
+  "description": "90 pages of evidence visualised as a data mountain. Heat-map colours reveal the peaks and valleys of a decade of loan history laid bare.\n\nRoyal Ruby \u2014 Tech Assist via AI Agentics\nBe Better. Defend and Grow.\n\nhttps://royalruby.io",
+  "image": "https://royal-ruby-theta.vercel.app/nft/unchained/art/14.svg",
+  "external_url": "https://royalruby.io",
+  "attributes": [
+    {
+      "trait_type": "Act",
+      "value": "The Fight"
+    },
+    {
+      "trait_type": "Chapter",
+      "value": "14 of 25"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Brand",
+      "value": "Royal Ruby"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Edition",
+      "value": 14,
+      "max_value": 25
+    }
+  ]
+}
