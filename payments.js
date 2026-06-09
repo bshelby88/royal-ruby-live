@@ -26,14 +26,14 @@
     'ruby-dispute-vault': {
       name: 'Ruby Dispute Vault',
       price: 47,
-      url: 'https://sentry-forge.lemonsqueezy.com/checkout/buy/ba676d55-3a2f-417e-b6f3-bf065251b862',
+      url: '',
       ctaLive: 'Unlock the Dispute Vault — $47',
       ctaWaitlist: 'Join the Dispute Vault waitlist',
     },
     'credit-stacker': {
       name: 'Ruby Credit Stacker',
       price: 97,
-      url: 'https://sentry-forge.lemonsqueezy.com/checkout/buy/869556bb-e747-477d-a4e5-67edf9743883',
+      url: '',
       ctaLive: 'Get the Credit Stacker — $97',
       ctaWaitlist: 'Join the Credit Stacker waitlist',
     },
@@ -46,7 +46,7 @@
       const product = PRODUCTS[slug];
       if (!product) return;
 
-      const hasLiveLink = typeof product.url === 'string' && (product.url.startsWith('https://buy.stripe.com/') || product.url.includes('lemonsqueezy.com'));
+      const hasLiveLink = typeof product.url === 'string' && product.url.length > 0 && (product.url.startsWith('https://buy.stripe.com/') || product.url.includes('lemonsqueezy.com'));
 
       if (hasLiveLink) {
         el.setAttribute('href', product.url);
@@ -58,6 +58,10 @@
         }
       } else {
         el.setAttribute('data-cta', 'waitlist');
+        el.setAttribute('href', 'mailto:waitlist@royalruby.io?subject=' + encodeURIComponent('Waitlist: ' + product.name));
+        if (el.dataset.autolabel !== 'off') {
+          el.textContent = product.ctaWaitlist;
+        }
       }
     });
   }
