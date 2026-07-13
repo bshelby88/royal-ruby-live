@@ -1,16 +1,10 @@
 /*
- * Royal Ruby — Stripe Payment Link config
+ * Royal Ruby — Product Link config
  * ----------------------------------------
- * Single source of truth for product pricing + Stripe URLs.
- * Static site, no backend. Uses Stripe Payment Links (no keys in source).
- *
- * To go live:
- *   1. Stripe Dashboard → Products → + Add product → set name/price → Save
- *   2. On the product page → Create payment link → copy the https://buy.stripe.com/... URL
- *   3. Paste it into the `url` field below, save, redeploy.
+ * Single source of truth for product pricing + waitlist URLs.
+ * Static site, no backend. Gated on USDC-on-chain and waitlist flow.
  *
  * Until a URL is filled in, CTAs fall back to the existing mailto: waitlist.
- * See STRIPE-SETUP.md for the full walkthrough.
  */
 (function () {
   'use strict';
@@ -46,7 +40,7 @@
       const product = PRODUCTS[slug];
       if (!product) return;
 
-      const hasLiveLink = typeof product.url === 'string' && product.url.length > 0 && (product.url.startsWith('https://buy.stripe.com/') || product.url.includes('lemonsqueezy.com'));
+      const hasLiveLink = typeof product.url === 'string' && product.url.length > 0 && product.url.startsWith('http');
 
       if (hasLiveLink) {
         el.setAttribute('href', product.url);
