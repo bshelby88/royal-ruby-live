@@ -10,9 +10,15 @@ const ITEM_FILES = Array.from({ length: 10 }, (_, index) => `${index + 1}.json`)
 const METADATA_FILES = [...ITEM_FILES, 'collection.json'];
 const CANONICAL_ORIGIN = 'https://royalruby.io';
 const BLOCKED_CLAIMS = /unlockable|open[- ]edition|holders? (?:get|receive)|auto-enrollment|early access|mint(?:ing| is live| live)|available now|buy now|purchase|holder benefits?/i;
+const HTML_PAGES = readdirSync(ROOT).filter((name) => name.endsWith('.html')).sort();
 
 const readJson = (base, file) => JSON.parse(readFileSync(join(ROOT, base, file), 'utf8'));
 const metadataText = (metadata) => JSON.stringify(metadata);
+
+function expectOneAnalyticsLoader(html, page) {
+  expect(html.match(/window\.va\s*=\s*window\.va\s*\|\|\s*function/g) ?? [], `${page} queue loader`).toHaveLength(1);
+  expect(html.match(/\/_vercel\/insights\/script\.js/g) ?? [], `${page} insights script`).toHaveLength(1);
+}
 
 function expectCanonicalAndTruthful(metadata, file) {
   const text = metadataText(metadata);
@@ -91,5 +97,25 @@ describe('production deployment truth gates', () => {
     expect(health).toContain("process.env.EXPECTED_COMMIT");
     expect(health).toContain("/deployment-provenance.json");
     expect(health).toMatch(/provenance\.commit\s*===\s*EXPECTED_COMMIT/);
+  });
+});
+
+describe('Vercel Web Analytics coverage', () => {
+  it.each(HTML_PAGES)('source %s has exactly one queue and insights loader', (page) => {
+    expectOneAnalyticsLoader(readFileSync(join(ROOT, page), 'utf8'), `source/${page}`);
+  });
+
+  it.each(HTML_PAGES)('dist %s has exactly one queue and insights loader', (page) => {
+    expectOneAnalyticsLoader(readFileSync(join(ROOT, 'dist', page), 'utf8'), `dist/${page}`);
+  });
+
+  it('preserves the privacy disclosure and exact 90-day attribution retention', () => {
+    const privacy = readFileSync(join(ROOT, 'privacy.html'), 'utf8');
+    expect(privacy).toMatch(/anonymous usage data through privacy-friendly analytics/i);
+    expect(privacy).toMatch(/affiliate/i);
+    expect(privacy).toMatch(/UTM/i);
+    expect(privacy).toMatch(/first-party cookies?/i);
+    expect(privacy).toMatch(/localStorage/i);
+    expect(privacy).toMatch(/retain(?:ed)? (?:them|these attribution values) for exactly 90 days/i);
   });
 });
