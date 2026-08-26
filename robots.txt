@@ -3,4 +3,4 @@ Allow: /
 Disallow: /thanks.html
 Disallow: /checklist.html
 
-Sitemap: https://royalruby.co/sitemap.xml
+Sitemap: https://royalruby.io/sitemap.xml

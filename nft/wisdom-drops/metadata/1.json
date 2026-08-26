@@ -1,9 +1,8 @@
 {
-  "name": "Ruby Wisdom Drop #01 \u2014 Myth #1 \u2014 The Soft Pull",
-  "description": "The first video in the Royal Ruby Wisdom series. A 26-second correction of the most common credit myth in America. Checking your own credit does NOT hurt your score \u2014 it's a soft pull, invisible to lenders. Unlockable content: the full script, a one-page printable handout, and access to the Royal Ruby mailing list.\n\nEducational content only. Not legal or financial advice.",
-  "image": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/art/1.png",
-  "animation_url": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/videos/01-credit-check-myth.mp4",
-  "external_url": "https://royalruby.co",
+  "name": "Ruby Wisdom Drop #01 — Myth #1 — The Soft Pull",
+  "description": "The first video in the Royal Ruby Wisdom series. A 26-second correction of the most common credit myth in America. Checking your own credit does NOT hurt your score — it's a soft pull, invisible to lenders.\n\nEducational content only. Not legal or financial advice.",
+  "image": "https://royalruby.io/nft/wisdom-drops/art/1.png",
+  "external_url": "https://royalruby.io",
   "attributes": [
     {
       "trait_type": "Series",
@@ -20,10 +19,6 @@
     {
       "trait_type": "Length",
       "value": "Short-form"
-    },
-    {
-      "trait_type": "Unlockable",
-      "value": "Yes"
     },
     {
       "trait_type": "Chain",

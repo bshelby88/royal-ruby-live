@@ -1,9 +1,8 @@
 {
-  "name": "Ruby Wisdom Drop #10 \u2014 Four Documents, One USB",
-  "description": "The minimum-viable financial legacy kit every family should have on a single USB drive. Three-bureau report, dispute letter template, one-page budget, and a debt payoff plan ranked by interest \u2014 not balance. Unlockable: a preview of the Ruby Starter Pack.\n\nEducational content only.",
-  "image": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/art/10.png",
-  "animation_url": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/videos/10-usb-cliffhanger.mp4",
-  "external_url": "https://royalruby.co",
+  "name": "Ruby Wisdom Drop #10 — Four Documents, One USB",
+  "description": "The minimum-viable financial legacy kit every family should have on a single USB drive. Three-bureau report, dispute letter template, one-page budget, and a debt payoff plan ranked by interest — not balance.\n\nEducational content only.",
+  "image": "https://royalruby.io/nft/wisdom-drops/art/10.png",
+  "external_url": "https://royalruby.io",
   "attributes": [
     {
       "trait_type": "Series",
@@ -20,10 +19,6 @@
     {
       "trait_type": "Length",
       "value": "Short-form"
-    },
-    {
-      "trait_type": "Unlockable",
-      "value": "Yes"
     },
     {
       "trait_type": "Chain",

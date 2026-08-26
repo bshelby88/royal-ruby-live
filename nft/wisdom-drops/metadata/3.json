@@ -1,9 +1,8 @@
 {
-  "name": "Ruby Wisdom Drop #03 \u2014 Do Not Close It",
-  "description": "One of the five quiet score killers \u2014 closing your oldest credit card. Fifteen percent of your FICO is length of history, and closing the oldest account shortens your average overnight. Unlockable: the 'which card to keep alive' decision matrix and a small-recurring-charge automation guide.\n\nEducational content only.",
-  "image": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/art/3.png",
-  "animation_url": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/videos/03-oldest-card.mp4",
-  "external_url": "https://royalruby.co",
+  "name": "Ruby Wisdom Drop #03 — Do Not Close It",
+  "description": "One of the five quiet score killers — closing your oldest credit card. Fifteen percent of your FICO is length of history, and closing the oldest account shortens your average overnight.\n\nEducational content only.",
+  "image": "https://royalruby.io/nft/wisdom-drops/art/3.png",
+  "external_url": "https://royalruby.io",
   "attributes": [
     {
       "trait_type": "Series",
@@ -20,10 +19,6 @@
     {
       "trait_type": "Length",
       "value": "Short-form"
-    },
-    {
-      "trait_type": "Unlockable",
-      "value": "Yes"
     },
     {
       "trait_type": "Chain",

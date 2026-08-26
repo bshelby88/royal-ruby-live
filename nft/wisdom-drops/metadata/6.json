@@ -1,9 +1,8 @@
 {
-  "name": "Ruby Wisdom Drop #06 \u2014 Don't Pay to Delete",
-  "description": "Why the pay-for-delete trap keeps people poor. Collection agencies can't legally promise deletion, and a 'paid' collection sits on your report for seven years from the original delinquency date. Unlockable: the goodwill-letter template and the negotiation playbook.\n\nEducational content only.",
-  "image": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/art/6.png",
-  "animation_url": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/videos/06-pay-for-delete.mp4",
-  "external_url": "https://royalruby.co",
+  "name": "Ruby Wisdom Drop #06 — Don't Pay to Delete",
+  "description": "Why the pay-for-delete trap keeps people poor. Collection agencies can't legally promise deletion, and a 'paid' collection sits on your report for seven years from the original delinquency date.\n\nEducational content only.",
+  "image": "https://royalruby.io/nft/wisdom-drops/art/6.png",
+  "external_url": "https://royalruby.io",
   "attributes": [
     {
       "trait_type": "Series",
@@ -20,10 +19,6 @@
     {
       "trait_type": "Length",
       "value": "Short-form"
-    },
-    {
-      "trait_type": "Unlockable",
-      "value": "Yes"
     },
     {
       "trait_type": "Chain",

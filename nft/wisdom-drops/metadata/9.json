@@ -1,9 +1,8 @@
 {
-  "name": "Ruby Wisdom Drop #09 \u2014 Stewardship Is Spiritual",
-  "description": "The Bible talks about money more than faith and prayer combined \u2014 there's a reason. Stewardship is the test, not the trap. Unlockable: a one-page devotional on financial stewardship, plus the Luke 16:10 study guide.\n\nEducational content only.",
-  "image": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/art/9.png",
-  "animation_url": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/videos/09-faith-finance.mp4",
-  "external_url": "https://royalruby.co",
+  "name": "Ruby Wisdom Drop #09 — Stewardship Is Spiritual",
+  "description": "The Bible talks about money more than faith and prayer combined — there's a reason. Stewardship is the test, not the trap.\n\nEducational content only.",
+  "image": "https://royalruby.io/nft/wisdom-drops/art/9.png",
+  "external_url": "https://royalruby.io",
   "attributes": [
     {
       "trait_type": "Series",
@@ -20,10 +19,6 @@
     {
       "trait_type": "Length",
       "value": "Short-form"
-    },
-    {
-      "trait_type": "Unlockable",
-      "value": "Yes"
     },
     {
       "trait_type": "Chain",

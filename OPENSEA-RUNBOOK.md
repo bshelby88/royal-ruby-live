@@ -1,4 +1,6 @@
-# OpenSea Collection Setup & Listing Runbook — Ruby Wisdom Drops
+# OpenSea Collection Setup & Listing Runbook — historical draft
+
+> **NOT VERIFIED OR ACTIVE:** Retained planning material. Do not execute, list, purchase, or publish coordinates and claims below without independent on-chain verification. Customer surfaces remain Coming Soon at `royalruby.io`.
 =============================================================================
 
 This operational runbook provides the exact steps for Bryant Shelby to connect the Deployer Wallet, brand the **Ruby Wisdom Drops** on-chain collection on **Base mainnet**, and list the first 3–5 items to activate secondary trading and indexing on OpenSea.

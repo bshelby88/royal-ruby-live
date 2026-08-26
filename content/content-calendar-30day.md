@@ -1,4 +1,6 @@
-# Royal Ruby — 30-day content calendar
+# Royal Ruby 30-day content calendar — historical draft
+
+> **HISTORICAL DRAFT:** Launch, checkout, and on-chain claims below are not current. Paid and digital-collectible rails are disabled; do not execute this calendar without a fresh verified plan.
 
 **Start date:** 2026-04-15 (tomorrow)
 **Cadence:** 1–2 posts per day, rotating across 4 platforms
