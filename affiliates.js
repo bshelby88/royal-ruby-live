@@ -19,6 +19,7 @@
   const COOKIE_NAME = 'rr_ref';
   const STORAGE_KEY = 'rr_affiliate';
   const DAYS = 90;
+  const RETENTION_MS = DAYS * 864e5;
 
   // UTM params we persist + inject alongside ref=
   const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
@@ -45,17 +46,32 @@
     return match ? decodeURIComponent(match[1]) : null;
   }
 
-  function getStored() {
+  function getStored(key) {
     try {
-      return localStorage.getItem(STORAGE_KEY);
+      const raw = localStorage.getItem(key);
+      if (!raw) return null;
+      const record = JSON.parse(raw);
+      if (!record || typeof record.value !== 'string' || !Number.isFinite(record.expiresAt)) {
+        localStorage.removeItem(key);
+        return null;
+      }
+      if (Date.now() >= record.expiresAt) {
+        localStorage.removeItem(key);
+        return null;
+      }
+      return record.value;
     } catch {
+      try { localStorage.removeItem(key); } catch {}
       return null;
     }
   }
 
-  function setStored(value) {
+  function setStored(key, value) {
     try {
-      localStorage.setItem(STORAGE_KEY, value);
+      localStorage.setItem(key, JSON.stringify({
+        value,
+        expiresAt: Date.now() + RETENTION_MS,
+      }));
     } catch {}
   }
 
@@ -66,7 +82,7 @@
     const clean = ref.toLowerCase().replace(/[^a-z0-9_-]/g, '').slice(0, 40);
     if (clean) {
       setCookie(COOKIE_NAME, clean, DAYS);
-      setStored(clean);
+      setStored(STORAGE_KEY, clean);
     }
   }
 
@@ -77,17 +93,11 @@
     const clean = cleanUtm(raw);
     if (!clean) return;
     setCookie(UTM_STORAGE_PREFIX + key, clean, DAYS);
-    try {
-      localStorage.setItem(UTM_STORAGE_PREFIX + key, clean);
-    } catch {}
+    setStored(UTM_STORAGE_PREFIX + key, clean);
   });
 
   function getUtm(key) {
-    try {
-      const ls = localStorage.getItem(UTM_STORAGE_PREFIX + key);
-      if (ls) return ls;
-    } catch {}
-    return getCookie(UTM_STORAGE_PREFIX + key);
+    return getStored(UTM_STORAGE_PREFIX + key) || getCookie(UTM_STORAGE_PREFIX + key);
   }
 
   function currentUtms() {
@@ -100,7 +110,7 @@
   }
 
   // 2. Resolve current affiliate
-  const current = getStored() || getCookie(COOKIE_NAME);
+  const current = getStored(STORAGE_KEY) || getCookie(COOKIE_NAME);
   const utms = currentUtms();
   const hasUtms = Object.keys(utms).length > 0;
 
