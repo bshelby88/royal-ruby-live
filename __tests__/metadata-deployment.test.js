@@ -79,6 +79,9 @@ describe('production deployment truth gates', () => {
     expect(workflow).toMatch(/run: npm run build/);
     expect(workflow).toMatch(/run: npm audit --audit-level=high/);
     expect(workflow).toMatch(/sparse-checkout-cone-mode: false/);
+    expect(workflow).toMatch(/actions\/checkout@[0-9a-f]{40}/);
+    expect(workflow).toMatch(/actions\/setup-node@[0-9a-f]{40}/);
+    expect(workflow).toContain('/.github/workflows/quality.yml');
     expect(workflow).toContain('/nft/wisdom-drops/');
     expect(workflow).toContain('/__tests__/');
   });
