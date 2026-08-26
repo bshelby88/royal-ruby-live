@@ -1,0 +1,29 @@
+name: Production truth gates
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  verify-reviewed-output:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npm audit --audit-level=high
+      - name: Verify provenance matches the checked-out revision
+        env:
+          EXPECTED_COMMIT: ${{ github.sha }}
+        run: node -e "const p=require('./dist/deployment-provenance.json'); if(p.commit!==process.env.EXPECTED_COMMIT) process.exit(1)"

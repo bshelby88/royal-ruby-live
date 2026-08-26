@@ -1,4 +1,5 @@
-import { cpSync, existsSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { dirname, extname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -19,7 +20,18 @@ for (const special of ['_headers', '_redirects', 'robots.txt', 'sitemap.xml', 'v
 for (const directory of ['images']) {
   if (existsSync(join(root, directory))) cpSync(join(root, directory), join(dist, directory), { recursive: true });
 }
-const wisdomArt = join(root, 'nft', 'wisdom-drops', 'art');
-if (existsSync(wisdomArt)) cpSync(wisdomArt, join(dist, 'nft', 'wisdom-drops', 'art'), { recursive: true });
+const wisdomDrops = join(root, 'nft', 'wisdom-drops');
+if (existsSync(wisdomDrops)) cpSync(wisdomDrops, join(dist, 'nft', 'wisdom-drops'), { recursive: true });
+
+const commit = process.env.VERCEL_GIT_COMMIT_SHA
+  || execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim();
+if (!/^[0-9a-f]{40}$/.test(commit)) throw new Error('Build provenance requires an exact Git commit SHA.');
+writeFileSync(join(dist, 'deployment-provenance.json'), `${JSON.stringify({
+  repository: 'bshelby88/royal-ruby-live',
+  commit,
+  sourceRef: process.env.VERCEL_GIT_COMMIT_REF || 'local',
+  productionBranch: 'master',
+  buildOutput: 'dist',
+}, null, 2)}\n`);
 
 console.log(`Built static production artifact: ${dist}`);

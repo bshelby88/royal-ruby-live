@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = process.env.SITE || 'https://royalruby.io';
+const EXPECTED_COMMIT = process.env.EXPECTED_COMMIT;
 let failures = 0;
 
 function pass(message) { console.log(`✓ ${message}`); }
@@ -44,6 +45,18 @@ await probe('/payments.js', (response, body) => response.ok && body.includes('CH
 await probe('/nft.html', (response, body) => response.ok && /Coming Soon/i.test(body) && !/id="mintBtn"/.test(body));
 await probe('/api/frame?drop=1', (response, body) => response.ok && /Coming Soon/i.test(body) && !/content="tx"|frame-tx/i.test(body));
 await probe('/api/frame-tx', (response, body) => response.status === 503 && body.includes('coming soon'));
+await probe('/deployment-provenance.json', (response, body) => {
+  if (!response.ok) return false;
+  try {
+    const provenance = JSON.parse(body);
+    return provenance.repository === 'bshelby88/royal-ruby-live'
+      && provenance.productionBranch === 'master'
+      && /^[0-9a-f]{40}$/.test(provenance.commit)
+      && (!EXPECTED_COMMIT || provenance.commit === EXPECTED_COMMIT);
+  } catch {
+    return false;
+  }
+});
 
 if (failures) {
   console.error(`\n${failures} health check(s) failed.`);

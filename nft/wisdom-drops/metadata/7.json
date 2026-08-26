@@ -1,9 +1,8 @@
 {
-  "name": "Ruby Wisdom Drop #07 \u2014 The 1-in-5 Report",
-  "description": "The FTC's number, not ours. One in five credit reports has a material error \u2014 and the errors live in the reports you're not watching. Unlockable: the three-bureau dispute cheat sheet and AnnualCreditReport.com walkthrough.\n\nEducational content only.",
-  "image": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/art/7.png",
-  "animation_url": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/videos/07-authority-pov.mp4",
-  "external_url": "https://royalruby.co",
+  "name": "Ruby Wisdom Drop #07 — The 1-in-5 Report",
+  "description": "The FTC's number, not ours. One in five credit reports has a material error — and the errors live in the reports you're not watching.\n\nEducational content only.",
+  "image": "https://royalruby.io/nft/wisdom-drops/art/7.png",
+  "external_url": "https://royalruby.io",
   "attributes": [
     {
       "trait_type": "Series",
@@ -20,10 +19,6 @@
     {
       "trait_type": "Length",
       "value": "Short-form"
-    },
-    {
-      "trait_type": "Unlockable",
-      "value": "Yes"
     },
     {
       "trait_type": "Chain",

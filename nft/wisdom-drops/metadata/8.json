@@ -1,9 +1,8 @@
 {
-  "name": "Ruby Wisdom Drop #08 \u2014 Eleven Days to Delete",
-  "description": "Real letter, real 6-year-old collection, real eleven-day deletion. Three moves make it work: cite the specific FCRA section, demand method of verification, send certified mail. Unlockable: the exact letter template used (FCRA \u00a7 611 verification request).\n\nEducational content only.",
-  "image": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/art/8.png",
-  "animation_url": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/videos/08-dispute-receipts.mp4",
-  "external_url": "https://royalruby.co",
+  "name": "Ruby Wisdom Drop #08 — Eleven Days to Delete",
+  "description": "Real letter, real 6-year-old collection, real eleven-day deletion. Three moves make it work: cite the specific FCRA section, demand method of verification, send certified mail.\n\nEducational content only.",
+  "image": "https://royalruby.io/nft/wisdom-drops/art/8.png",
+  "external_url": "https://royalruby.io",
   "attributes": [
     {
       "trait_type": "Series",
@@ -20,10 +19,6 @@
     {
       "trait_type": "Length",
       "value": "Short-form"
-    },
-    {
-      "trait_type": "Unlockable",
-      "value": "Yes"
     },
     {
       "trait_type": "Chain",

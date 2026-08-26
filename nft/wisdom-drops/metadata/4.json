@@ -1,9 +1,8 @@
 {
-  "name": "Ruby Wisdom Drop #04 \u2014 The 30% Rule Is a Lie",
-  "description": "Utilization is 30% of your FICO and most people get the timing wrong. The bureaus snapshot your balance whenever the lender reports \u2014 not on the due date. Fix: pay down before the statement closes, not after. Unlockable: the statement-date tracker spreadsheet.\n\nEducational content only.",
-  "image": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/art/4.png",
-  "animation_url": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/videos/04-utilization.mp4",
-  "external_url": "https://royalruby.co",
+  "name": "Ruby Wisdom Drop #04 — The 30% Rule Is a Lie",
+  "description": "Utilization is 30% of your FICO and most people get the timing wrong. The bureaus snapshot your balance whenever the lender reports — not on the due date. Fix: pay down before the statement closes, not after.\n\nEducational content only.",
+  "image": "https://royalruby.io/nft/wisdom-drops/art/4.png",
+  "external_url": "https://royalruby.io",
   "attributes": [
     {
       "trait_type": "Series",
@@ -20,10 +19,6 @@
     {
       "trait_type": "Length",
       "value": "Short-form"
-    },
-    {
-      "trait_type": "Unlockable",
-      "value": "Yes"
     },
     {
       "trait_type": "Chain",

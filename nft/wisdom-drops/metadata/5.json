@@ -1,9 +1,8 @@
 {
-  "name": "Ruby Wisdom Drop #05 \u2014 To the One Watching at Midnight",
-  "description": "A direct-address meditation on wealth, systems, and who gets taught this at the dinner table. You're not behind \u2014 you're under-equipped. Unlockable: a printable affirmation card designed by Royal Ruby.\n\nEducational content only.",
-  "image": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/art/5.png",
-  "animation_url": "https://royal-ruby-theta.vercel.app/nft/wisdom-drops/videos/05-single-mom.mp4",
-  "external_url": "https://royalruby.co",
+  "name": "Ruby Wisdom Drop #05 — To the One Watching at Midnight",
+  "description": "A direct-address meditation on wealth, systems, and who gets taught this at the dinner table. You're not behind — you're under-equipped.\n\nEducational content only.",
+  "image": "https://royalruby.io/nft/wisdom-drops/art/5.png",
+  "external_url": "https://royalruby.io",
   "attributes": [
     {
       "trait_type": "Series",
@@ -20,10 +19,6 @@
     {
       "trait_type": "Length",
       "value": "Short-form"
-    },
-    {
-      "trait_type": "Unlockable",
-      "value": "Yes"
     },
     {
       "trait_type": "Chain",
