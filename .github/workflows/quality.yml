@@ -5,6 +5,10 @@ on:
   push:
     branches: [master]
 
+concurrency:
+  group: production-truth-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
@@ -15,6 +19,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/*/
+            /.env.local.example
+            /__tests__/
+            /api/
+            /ecosystem/
+            /images/
+            /nft/wisdom-drops/
+            /scripts/
       - uses: actions/setup-node@v4
         with:
           node-version: 22
