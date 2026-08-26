@@ -7,7 +7,7 @@
 - Slow delivery. Every word lands.
 - Eye contact with the lens for the hook.
 - Faith-adjacent without being preachy — "families," "legacy," "stewardship," "truth."
-- Never say "Stripe" or a dollar amount on camera. Drive to the **free** checklist. The upsell happens on the site.
+- Do not quote a price or imply checkout is available. Drive to the **free** checklist; paid products are waitlist-only.
 
 **Shared settings (copy-paste every post):**
 - Caption ends with: `Free 90-day credit reset checklist → royalruby.co/tt`

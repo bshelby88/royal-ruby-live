@@ -37,9 +37,9 @@
   <!-- Vercel Speed Insights — Core Web Vitals tracking -->
   <script defer src="/_vercel/speed-insights/script.js"></script>
 
-  <!-- Stripe Payment Link config (single source of truth) -->
+  <!-- Deny-by-default commercial rail config (single source of truth) -->
   <script defer src="/payments.js"></script>
-  <!-- Affiliate attribution (?ref=xyz → injected into forms + Stripe links) -->
+  <!-- Affiliate attribution (?ref=xyz → injected into forms) -->
   <script defer src="/affiliates.js"></script>
 
   <!-- JSON-LD: Organization -->
@@ -416,7 +416,7 @@
       letter-spacing: 0.1em;
     }
 
-    /* NEXT STEP — Stripe upsell */
+    /* NEXT STEP — product interest */
     .next {
       padding: calc(var(--space-section) / 1.5) 0 var(--space-section);
       background: var(--ivory-warm);
@@ -607,6 +607,7 @@
         <input type="text" name="first_name" placeholder="First name" required autocomplete="given-name" />
         <input type="email" name="email" placeholder="Your best email" required autocomplete="email" />
         <input type="hidden" name="source" value="landing-v1" />
+        <input type="hidden" name="interest" value="free-checklist" />
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
         <button type="submit">Get the checklist &rarr;</button>
       </form>
@@ -663,9 +664,8 @@
         <div class="kicker">After the Checklist</div>
         <h2>The next step is the <em>Ruby Starter Pack.</em></h2>
         <p>The 90-day financial reset bundle — the checklist, a budget builder, a debt destroyer, and the dispute letter templates we use. One-time, not a subscription.</p>
-        <!-- Auto-rewritten to LemonSqueezy checkout URL by /payments.js when live.
-             Falls back to mailto: waitlist until a URL is configured. -->
-        <a href="mailto:waitlist@royalruby.io?subject=Waitlist:%20Ruby%20Starter%20Pack" class="cta-btn" data-product="ruby-starter-pack" data-buy="ruby-starter-pack">
+        <!-- Checkout remains disabled unless payments.js has an approved HTTPS rail. -->
+        <a href="/?interest=ruby-starter-pack#signup" class="cta-btn" data-product="ruby-starter-pack" data-buy="ruby-starter-pack">
           Join the Starter Pack waitlist
         </a>
       </div>
@@ -692,7 +692,7 @@
         <div class="kicker" style="color:var(--gold);">Rung Two</div>
         <h2 style="color:var(--ivory);">For the ones with <em style="color:var(--gold);">real damage.</em></h2>
         <p style="color:rgba(248,244,233,0.75);">The <strong>Ruby Dispute Vault</strong> is the binder. Twelve battle-tested dispute letter templates, the FCRA script book, a method-of-verification playbook, and the actual letters Dr. Marigny has used to remove collections, charge-offs, and six-year-old judgments. Certified-mail ready.</p>
-        <a href="mailto:waitlist@royalruby.io?subject=Waitlist:%20Ruby%20Dispute%20Vault"
+        <a href="/?interest=ruby-dispute-vault#signup"
            class="cta-btn"
            data-product="ruby-dispute-vault"
            data-buy="ruby-dispute-vault"
@@ -723,7 +723,7 @@
         <div class="kicker">Rung Three</div>
         <h2>Credit becomes <em>capital.</em></h2>
         <p>The <strong>Credit Stacker</strong> is the full program. Business credit from zero, leverage strategies, quarterly wealth-move briefings from Dr. Marigny, and the complete framework that turns a credit score into an income-generating asset. This is how you stop repairing and start building.</p>
-        <a href="mailto:waitlist@royalruby.io?subject=Waitlist:%20Ruby%20Credit%20Stacker"
+        <a href="/?interest=credit-stacker#signup"
            class="cta-btn"
            data-product="credit-stacker"
            data-buy="credit-stacker"
@@ -772,6 +772,14 @@
   (function() {
     const form = document.getElementById('signup');
     if (!form) return;
+    const requestedInterest = new URL(window.location.href).searchParams.get('interest');
+    const knownInterests = new Set(['ruby-starter-pack', 'ruby-dispute-vault', 'credit-stacker']);
+    if (knownInterests.has(requestedInterest)) {
+      form.elements.interest.value = requestedInterest;
+      document.querySelector('.form-card h2').textContent = 'Join the product waitlist';
+      document.querySelector('.form-card .form-sub').textContent = 'Leave your email and we’ll notify you when it is available.';
+      form.querySelector('button').textContent = 'Join the waitlist →';
+    }
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
       const action = form.getAttribute('action');

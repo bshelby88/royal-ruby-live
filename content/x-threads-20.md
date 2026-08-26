@@ -1,4 +1,6 @@
-# 20 X (Twitter) threads — Royal Ruby 20-day launch
+# 20 X (Twitter) threads — historical Royal Ruby launch drafts
+
+> **HISTORICAL DRAFT:** Commercial and on-chain claims below are not current. Do not publish without reconciling against README.md and royalruby.io.
 
 Each thread is 5–7 tweets. Copy-paste ready. Replace `@ROYALRUBY` with your handle, `{{LINK}}` with the UTM-tracked short link, and `{{MEDIA}}` with the matching video from `videos/`.
 

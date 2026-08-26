@@ -1,4 +1,6 @@
-# Manifold Creator — no-code drop path
+# Manifold Creator — future concept
+
+> **NOT CONFIGURED:** Retained planning material. No account, contract, collection, price, benefit, or purchase action is verified. Do not execute without separate approval and verification.
 
 If you want to skip deploying Solidity yourself, **Manifold Studio** is the best no-code path for Base-chain NFT drops. It's what most credential creators use for limited-edition drops without writing a contract.
 

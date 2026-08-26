@@ -97,7 +97,7 @@ def kicker_pill(draw: ImageDraw.ImageDraw, text: str, x: int, y: int, font: Imag
     return (w, h)
 
 
-# ---------- product cover (1080x1920 portrait for Stripe + Gumroad) ----------
+# ---------- product cover (1080x1920 portrait for future commerce) ----------
 
 def render_product_cover(slug: str, kicker: str, title: str, sub: str, price: int, bullets: list[str]) -> Path:
     w, h = 1080, 1920

@@ -1,6 +1,8 @@
 # OpenSea portfolio plan — Royal Ruby universe
 
-**The strategy:** turn every piece of existing content into an on-chain collectible. Not because NFTs are magic, but because they create a *secondary audience* of crypto-native buyers who would never touch Stripe or Gumroad. Every piece of content you already own becomes a second monetization surface with zero duplicated work.
+> **FUTURE CONCEPT — NOT DEPLOYED:** This document is retained as planning material. No contract, collection, price, supply, benefit, or purchase action described below is verified or live. Customer surfaces must remain Coming Soon at `royalruby.io`.
+
+**The strategy:** explore whether selected content could become on-chain collectibles for a crypto-native audience. This is not an active monetization surface.
 
 ## Three collections, not one
 
@@ -10,7 +12,7 @@
 | **Ruby Wisdom Drops** | 10 editions × open | 0.0025 ETH (~$6) each | Each of the 10 TikTok videos becomes a collectible video NFT with the script as unlockable content |
 | **Ruby Starter Seals** | 100 | 0.007 ETH (~$17) | Holder key → Starter Pack PDF + checklist + bonus worksheet |
 
-The Dispute Vault Pass is the flagship. The Wisdom Drops are the loss-leader — cheap, high-volume, they put the brand in front of Farcaster/X/OpenSea browsers. The Starter Seals are the fiat-to-crypto bridge (same price as Stripe, same product, different rail).
+The names below are unverified future concepts only. They do not represent available products, prices, or deployed collections.
 
 ## Collection 1 — Ruby Dispute Vault Pass ✅ BUILT
 

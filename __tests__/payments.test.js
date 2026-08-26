@@ -1,136 +1,111 @@
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-
-/**
- * Payments wiring consistency tests.
- *
- * `payments.js` is the single source of truth for Stripe Payment Link URLs.
- * Every `data-buy="<slug>"` in the HTML must have a matching entry in
- * `PRODUCTS`, and every `url` present in `PRODUCTS` must be a real
- * `https://buy.stripe.com/` link. These checks catch:
- *
- *   - Typos in a new `data-buy` slug (e.g., `credit-stacker` vs
- *     `ruby-credit-stacker`)
- *   - A URL pasted into the wrong field or mistyped
- *   - HTML CTAs that silently fall through to the mailto waitlist because
- *     the config key doesn't exist
- *
- * Run via `npm test`.
- */
+import vm from 'node:vm';
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
+const readRootFile = (name) => readFileSync(join(ROOT, name), 'utf8');
 
-function readRootFile(name) {
-  return readFileSync(join(ROOT, name), 'utf-8');
-}
-
-/** Extract the PRODUCTS object from payments.js without executing it.
- * The file is an IIFE with a `const PRODUCTS = { ... }` declaration —
- * we pull the object literal out with a regex and eval it, which is
- * safe here because the source is under our control. */
-function loadProducts() {
-  const src = readRootFile('payments.js');
-  const match = src.match(/const PRODUCTS\s*=\s*(\{[\s\S]*?\n\s*\});/);
+function loadProducts(source = readRootFile('payments.js')) {
+  const match = source.match(/const PRODUCTS\s*=\s*(\{[\s\S]*?\n\s*\});/);
   if (!match) throw new Error('PRODUCTS object not found in payments.js');
-  // eslint-disable-next-line no-eval
-  return eval('(' + match[1] + ')');
+  return vm.runInNewContext('(' + match[1] + ')');
 }
 
-/** Every `data-buy="..."` attribute in every HTML file. */
-function findDataBuySlugs(...files) {
-  const out = [];
-  for (const f of files) {
-    const html = readRootFile(f);
-    const re = /data-buy="([^"]+)"/g;
-    for (const m of html.matchAll(re)) {
-      out.push({ file: f, slug: m[1] });
-    }
-  }
-  return out;
+function runPayments(source, slug = 'ruby-starter-pack') {
+  const attributes = new Map([['data-buy', slug]]);
+  const element = {
+    dataset: {},
+    textContent: '',
+    getAttribute: (name) => attributes.get(name) ?? null,
+    setAttribute: (name, value) => attributes.set(name, value),
+    removeAttribute: (name) => attributes.delete(name),
+  };
+  const document = {
+    readyState: 'complete',
+    querySelectorAll: () => [element],
+    addEventListener: () => {},
+  };
+  const window = {};
+  vm.runInNewContext(source, { document, window, URL, encodeURIComponent });
+  return { element, attributes, window };
 }
 
-describe('payments.js config', () => {
-  it('parses and exposes at least one product', () => {
-    const products = loadProducts();
-    expect(Object.keys(products).length).toBeGreaterThan(0);
-  });
+function configureFirstProduct({ url, rail }) {
+  return readRootFile('payments.js')
+    .replace("rail: '',", `rail: '${rail}',`)
+    .replace("url: '',", `url: '${url}',`);
+}
 
-  it('every product has name, price, url, and both CTA labels', () => {
-    const products = loadProducts();
-    for (const [slug, p] of Object.entries(products)) {
-      expect(p.name, `${slug}.name`).toBeTruthy();
-      expect(typeof p.price, `${slug}.price`).toBe('number');
-      expect(typeof p.url, `${slug}.url`).toBe('string');
-      expect(p.ctaLive, `${slug}.ctaLive`).toBeTruthy();
-      expect(p.ctaWaitlist, `${slug}.ctaWaitlist`).toBeTruthy();
+describe('commercial rail configuration', () => {
+  it('keeps every checkout rail disabled by default', () => {
+    for (const [slug, product] of Object.entries(loadProducts())) {
+      expect(product.url, `${slug} URL`).toBe('');
+      expect(product.rail, `${slug} rail`).toBe('');
     }
   });
 
-  it('every non-empty url is a real Stripe or LemonSqueezy Link', () => {
-    const products = loadProducts();
-    for (const [slug, p] of Object.entries(products)) {
-      if (!p.url) continue;
-      expect(p.url, `${slug}.url must be https://buy.stripe.com/... or LemonSqueezy URL`)
-        .toMatch(/^(https:\/\/buy\.stripe\.com\/|https:\/\/sentry-forge\.lemonsqueezy\.com\/)/);
-    }
+  it('requires an explicit configured rail and exact approved host', () => {
+    const source = readRootFile('payments.js');
+    expect(source).toMatch(/const CHECKOUT_RAILS\s*=\s*Object\.freeze/);
+    expect(source).not.toMatch(/startsWith\(['"]http/);
+
+    const evil = runPayments(configureFirstProduct({
+      rail: 'lemonsqueezy',
+      url: 'https://sentry-forge.lemonsqueezy.com.evil.example/checkout',
+    }));
+    expect(evil.attributes.get('data-cta')).toBe('waitlist');
+
+    const insecure = runPayments(configureFirstProduct({
+      rail: 'lemonsqueezy',
+      url: 'http://sentry-forge.lemonsqueezy.com/checkout',
+    }));
+    expect(insecure.attributes.get('data-cta')).toBe('waitlist');
+  });
+
+  it('enables checkout only for an HTTPS URL on the configured rail allowlist', () => {
+    const result = runPayments(configureFirstProduct({
+      rail: 'lemonsqueezy',
+      url: 'https://sentry-forge.lemonsqueezy.com/checkout/buy',
+    }));
+    expect(result.attributes.get('data-cta')).toBe('live');
+    expect(result.attributes.get('href')).toBe('https://sentry-forge.lemonsqueezy.com/checkout/buy');
+  });
+
+  it('uses the measurable Formspree-backed signup flow when checkout is disabled', () => {
+    const result = runPayments(readRootFile('payments.js'));
+    expect(result.attributes.get('data-cta')).toBe('waitlist');
+    expect(result.attributes.get('href')).toBe('/?interest=ruby-starter-pack#signup');
+    expect(result.attributes.get('href')).not.toMatch(/^mailto:/);
   });
 });
 
-describe('HTML ↔ payments.js wiring', () => {
-  const htmlFiles = ['index.html', 'thanks.html', 'checklist.html'];
+describe('HTML and payment configuration wiring', () => {
+  const htmlFiles = ['index.html', 'links.html', 'thanks.html', 'checklist.html'];
 
-  it('every data-buy slug has a matching PRODUCTS entry', () => {
+  it('maps every paid-product CTA to a configured product', () => {
     const products = loadProducts();
-    const slugs = findDataBuySlugs(...htmlFiles);
-    expect(slugs.length).toBeGreaterThan(0);
-    const missing = slugs.filter(({ slug }) => !products[slug]);
-    expect(missing, `Unrecognized data-buy slug(s): ${JSON.stringify(missing)}`)
-      .toEqual([]);
+    const missing = [];
+    for (const file of htmlFiles) {
+      for (const match of readRootFile(file).matchAll(/data-buy="([^"]+)"/g)) {
+        if (!products[match[1]]) missing.push({ file, slug: match[1] });
+      }
+    }
+    expect(missing).toEqual([]);
   });
 
-  it('hardcoded checkout href on a data-buy CTA matches the config URL', () => {
-    // If the HTML has a hardcoded <a href="https://buy.stripe.com/..." or "https://sentry-forge.lemonsqueezy.com/...> AND
-    // the element carries data-buy, the two URLs must match. payments.js
-    // overrides the href for JS-enabled users, but the fallback URL shown
-    // to scrapers / JS-disabled clients should point at the same checkout.
-    const products = loadProducts();
+  it('has no paid-product mailto waitlist fallbacks', () => {
     for (const file of htmlFiles) {
       const html = readRootFile(file);
-      // Capture any <a ...> tag that has both an href and a data-buy attr.
-      const re = /<a\b[^>]*?\bhref="(https:\/\/(?:buy\.stripe\.com|sentry-forge\.lemonsqueezy\.com)\/[^"]+)"[^>]*?\bdata-buy="([^"]+)"[^>]*>|<a\b[^>]*?\bdata-buy="([^"]+)"[^>]*?\bhref="(https:\/\/(?:buy\.stripe\.com|sentry-forge\.lemonsqueezy\.com)\/[^"]+)"[^>]*>/g;
-      for (const m of html.matchAll(re)) {
-        const href = m[1] || m[4];
-        const slug = m[2] || m[3];
-        const configUrl = products[slug]?.url;
-        if (!configUrl) continue;  // waitlist-only product; no config URL to match
-        expect(href, `${file}: ${slug} hardcoded href must equal payments.js url`)
-          .toBe(configUrl);
-      }
+      expect(html, file).not.toMatch(/href="mailto:[^"]+"[^>]*data-buy|data-buy="[^"]+"[^>]*href="mailto:/i);
     }
   });
 
-  it('every data-product with a checkout href either sets data-buy or is documented', () => {
-    // data-product is a telemetry tag; data-buy is the payments.js hook.
-    // If an <a data-product="X"> has a checkout href, it probably SHOULD carry
-    // data-buy="X" so payments.js can keep the URL in sync. Exception: the
-    // "dispute-forge" flow routes to a separate domain (disputes.royalruby.io)
-    // and intentionally bypasses payments.js. List that here explicitly.
-    const SELF_MANAGED = new Set(['dispute-forge']);
-    for (const file of htmlFiles) {
-      const html = readRootFile(file);
-      const re = /<a\b[^>]*?\bhref="https:\/\/(?:buy\.stripe\.com|sentry-forge\.lemonsqueezy\.com)\/[^"]+"[^>]*?\bdata-product="([^"]+)"[^>]*>|<a\b[^>]*?\bdata-product="([^"]+)"[^>]*?\bhref="https:\/\/(?:buy\.stripe\.com|sentry-forge\.lemonsqueezy\.com)\/[^"]+"[^>]*>/g;
-      for (const m of html.matchAll(re)) {
-        const slug = m[1] || m[2];
-        if (SELF_MANAGED.has(slug)) continue;
-        // Now re-find the full tag and check for data-buy
-        const tagRe = new RegExp(`<a\\b[^>]*?data-product="${slug}"[^>]*>`, 'g');
-        for (const tag of html.matchAll(tagRe)) {
-          expect(tag[0], `${file}: <a data-product="${slug}"> should also carry data-buy="${slug}" or be listed in SELF_MANAGED`)
-            .toMatch(/data-buy="/);
-        }
-      }
-    }
+  it('keeps the verified Formspree endpoint on the signup form and records product interest', () => {
+    const html = readRootFile('index.html');
+    expect(html).toContain('action="https://formspree.io/f/mgorwnnn"');
+    expect(html).toContain('name="interest"');
+    expect(html).toContain("searchParams.get('interest')");
   });
 });

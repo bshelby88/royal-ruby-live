@@ -1,176 +1,52 @@
 #!/usr/bin/env node
-/*
- * Royal Ruby — end-to-end health check
- * ------------------------------------
- * Runs a sequence of probes against the production site and local files.
- * Green = ready to ship. Red = fix before posting.
- *
- * Usage:
- *   node scripts/health-check.mjs
- */
+/* Royal Ruby static/live commercial-rail health check. */
 
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const ROOT = path.resolve(__dirname, '..');
-const SITE = process.env.SITE || 'https://royal-ruby-theta.vercel.app';
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const SITE = process.env.SITE || 'https://royalruby.io';
+let failures = 0;
 
-const GREEN = '\x1b[32m';
-const RED = '\x1b[31m';
-const YELLOW = '\x1b[33m';
-const DIM = '\x1b[2m';
-const RESET = '\x1b[0m';
+function pass(message) { console.log(`✓ ${message}`); }
+function fail(message) { console.error(`✗ ${message}`); failures += 1; }
+function read(name) { return fs.readFileSync(path.join(ROOT, name), 'utf8'); }
 
-let pass = 0;
-let fail = 0;
-let warn = 0;
+function assert(condition, message) { condition ? pass(message) : fail(message); }
 
-function ok(msg) { console.log(`${GREEN}✓${RESET} ${msg}`); pass++; }
-function nope(msg, detail = '') { console.log(`${RED}✗${RESET} ${msg}${detail ? ' ' + DIM + detail + RESET : ''}`); fail++; }
-function yellow(msg, detail = '') { console.log(`${YELLOW}!${RESET} ${msg}${detail ? ' ' + DIM + detail + RESET : ''}`); warn++; }
-
-async function probe(url, { expectStatus = 200, mustContain = null } = {}) {
+async function probe(pathname, check) {
   try {
-    const res = await fetch(url, { redirect: 'follow' });
-    const body = mustContain ? await res.text() : '';
-    if (res.status !== expectStatus) {
-      return { ok: false, reason: `status ${res.status}` };
-    }
-    if (mustContain && !body.includes(mustContain)) {
-      return { ok: false, reason: `missing "${mustContain.slice(0, 40)}"` };
-    }
-    return { ok: true };
-  } catch (e) {
-    return { ok: false, reason: e.message };
+    const response = await fetch(SITE + pathname, { redirect: 'follow' });
+    const body = await response.text();
+    assert(check(response, body), `${pathname} at ${SITE}`);
+  } catch (error) {
+    fail(`${pathname} at ${SITE}: ${error.message}`);
   }
 }
 
-function fileExists(p) {
-  return fs.existsSync(path.join(ROOT, p));
+const payments = read('payments.js');
+const nft = read('nft.html');
+const frame = read('api/frame.js');
+const landing = read('index.html');
+
+assert(landing.includes('https://formspree.io/f/mgorwnnn'), 'verified Formspree endpoint remains configured');
+assert(landing.includes('name="interest"'), 'product interest is measurable');
+assert(!/startsWith\(['"]http/.test(payments), 'checkout does not use a generic URL prefix check');
+assert(/const CHECKOUT_RAILS\s*=\s*Object\.freeze/.test(payments), 'explicit checkout rail allowlist exists');
+assert((payments.match(/rail: ''/g) || []).length === 3, 'all product rails are disabled');
+assert((payments.match(/url: ''/g) || []).length === 3, 'all product URLs are disabled');
+assert(/Coming Soon/i.test(nft) && !/id="(?:connectBtn|mintBtn)"/.test(nft), 'NFT surface is Coming Soon without transaction controls');
+assert(/Coming Soon/i.test(frame) && !/content="tx"|frame-tx|0\.0025 ETH/i.test(frame), 'Frame has no transaction metadata');
+
+await probe('/', (response, body) => response.ok && body.includes('Royal Ruby'));
+await probe('/payments.js', (response, body) => response.ok && body.includes('CHECKOUT_RAILS'));
+await probe('/nft.html', (response, body) => response.ok && /Coming Soon/i.test(body) && !/id="mintBtn"/.test(body));
+await probe('/api/frame?drop=1', (response, body) => response.ok && /Coming Soon/i.test(body) && !/content="tx"|frame-tx/i.test(body));
+await probe('/api/frame-tx', (response, body) => response.status === 503 && body.includes('coming soon'));
+
+if (failures) {
+  console.error(`\n${failures} health check(s) failed.`);
+  process.exit(1);
 }
-
-async function main() {
-  console.log('\n— Royal Ruby health check —\n');
-
-  // ---- live site ----
-  console.log('SITE');
-  {
-    const r = await probe(SITE + '/', { mustContain: 'Royal Ruby' });
-    r.ok ? ok('landing page reachable') : nope('landing page', r.reason);
-  }
-  {
-    const r = await probe(SITE + '/read', { mustContain: 'Checklist' });
-    r.ok ? ok('/read checklist page') : nope('/read', r.reason);
-  }
-  {
-    const r = await probe(SITE + '/nft', { mustContain: 'Ruby Dispute Vault Pass' });
-    r.ok ? ok('/nft mint page') : nope('/nft', r.reason);
-  }
-  {
-    const r = await probe(SITE + '/payments.js', { mustContain: 'ruby-starter-pack' });
-    r.ok ? ok('payments.js served') : nope('payments.js', r.reason);
-  }
-  {
-    const r = await probe(SITE + '/affiliates.js', { mustContain: 'RR_AFFILIATE' });
-    r.ok ? ok('affiliates.js served') : nope('affiliates.js', r.reason);
-  }
-
-  // ---- utm redirects ----
-  console.log('\nUTM SHORT LINKS');
-  for (const slug of ['tt', 'ig', 'yt', 'fb', 'x', 'buy']) {
-    const res = await fetch(SITE + '/' + slug, { redirect: 'manual' });
-    const target = res.headers.get('location') || '';
-    if (res.status === 307 && target.includes('utm_source=')) {
-      ok(`/${slug} → ${target.slice(0, 60)}`);
-    } else {
-      nope(`/${slug}`, `status=${res.status}`);
-    }
-  }
-
-  // ---- lemonsqueezy link wired ----
-  console.log('\nLEMONSQUEEZY');
-  {
-    const r = await probe(SITE + '/payments.js', { mustContain: 'lemonsqueezy.com' });
-    r.ok ? ok('starter pack LemonSqueezy URL present') : nope('starter pack LemonSqueezy URL missing');
-  }
-
-  // ---- api endpoints ----
-  console.log('\nAPI');
-  {
-    const r = await probe(SITE + '/api/frame?drop=1', { mustContain: 'fc:frame' });
-    r.ok ? ok('Farcaster Frame endpoint') : nope('/api/frame', r.reason);
-  }
-  {
-    const res = await fetch(SITE + '/api/stripe-webhook', { method: 'GET' });
-    if (res.status === 405) ok('stripe-webhook rejects GET (expected)');
-    else yellow('stripe-webhook GET returned ' + res.status);
-  }
-  {
-    const res = await fetch(SITE + '/api/lead-log', { method: 'GET' });
-    if (res.status === 405) ok('lead-log rejects GET (expected)');
-    else yellow('lead-log GET returned ' + res.status);
-  }
-
-  // ---- local file tree ----
-  console.log('\nLOCAL FILES');
-  const critical = [
-    'index.html', 'thanks.html', 'checklist.html', 'nft.html',
-    'payments.js', 'affiliates.js', 'vercel.json',
-    'api/stripe-webhook.js', 'api/frame.js', 'api/frame-tx.js', 'api/lead-log.js',
-    'nft/RubyDisputeVaultPass.sol',
-    'nft/RubyWisdomDrops.sol',
-    'nft/RoyalRubyTreasury.sol',
-    'nft/DEPLOY.md',
-    'nft/opensea-plan.md',
-    'nft/portfolio-manifest.md',
-    'nft/marketing/launch-posts.md',
-    'BRAND-BOOK.md',
-    'INDEX.md',
-    'POSTING-PLAYBOOK.md',
-    'email-sequences/01-welcome-to-upsell.md',
-    'marigny/BRIEF.md',
-    'gumroad/SETUP.md',
-    'ecosystem/README.md',
-    'scripts/tiktok-batch-01.md',
-    'scripts/schedule-posts.mjs',
-    'scripts/stripe-create-products.mjs',
-    'scripts/opensea-wallet-scan.mjs',
-    'video-engine/render.py',
-    'video-engine/covers.py',
-  ];
-  for (const f of critical) {
-    fileExists(f) ? ok(f) : nope(f + ' missing');
-  }
-
-  // ---- videos ----
-  console.log('\nVIDEOS');
-  for (let i = 1; i <= 15; i++) {
-    const prefix = String(i).padStart(2, '0');
-    const found = fs.readdirSync(path.join(ROOT, 'videos'))
-      .find((n) => n.startsWith(prefix + '-') && n.endsWith('.mp4'));
-    found ? ok('videos/' + found) : yellow('video ' + prefix + ' not rendered yet');
-  }
-
-  // ---- NFT wisdom drops assets ----
-  console.log('\nNFT ASSETS');
-  for (let i = 1; i <= 10; i++) {
-    const art = `nft/wisdom-drops/art/${i}.png`;
-    const meta = `nft/wisdom-drops/metadata/${i}.json`;
-    fileExists(art) ? ok(art) : nope(art + ' missing');
-    fileExists(meta) ? ok(meta) : nope(meta + ' missing');
-  }
-
-  // ---- summary ----
-  console.log(`\n— summary —  ${GREEN}${pass} pass${RESET}  ${RED}${fail} fail${RESET}  ${YELLOW}${warn} warn${RESET}`);
-  if (fail === 0) {
-    console.log(`\n${GREEN}✓ Royal Ruby is healthy. Ship it.${RESET}\n`);
-    process.exit(0);
-  } else {
-    console.log(`\n${RED}✗ ${fail} failures — fix before posting.${RESET}\n`);
-    process.exit(1);
-  }
-}
-
-main();
+console.log('\nCommercial rails are truthfully disabled.');

@@ -2,20 +2,27 @@
   "name": "royal-ruby-site",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Royal Ruby — Free 90-Day Credit Reset Checklist landing page. Zero-build static site.",
   "scripts": {
     "dev": "python3 -m http.server 8080",
     "dev:node": "npx --yes serve -p 8080 .",
+    "build": "node scripts/build.mjs",
+    "serve:probe": "node scripts/local-server.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "deploy:vercel": "npx --yes vercel --prod",
     "deploy:netlify": "npx --yes netlify-cli deploy --prod --dir=.",
     "deploy:cloudflare": "npx --yes wrangler pages deploy . --project-name=royal-ruby"
   },
-  "keywords": ["royal-ruby", "credit", "landing-page"],
+  "keywords": [
+    "royal-ruby",
+    "credit",
+    "landing-page"
+  ],
   "author": "Royal Ruby LLC",
   "license": "UNLICENSED",
   "devDependencies": {
-    "vitest": "^3.0.0"
+    "vitest": "^4.1.11"
   }
 }

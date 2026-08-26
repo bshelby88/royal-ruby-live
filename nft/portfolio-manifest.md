@@ -58,9 +58,9 @@ To generate 497 more Pass variants: run `video-engine/covers.py` with a loop on 
 |---|---|---|
 | Royal Ruby landing OG image | `og.png` | All social shares of the root URL |
 | NFT page OG image | `og-nft.png` | All shares of `/nft` |
-| Starter Pack cover | `images/products/ruby-starter-pack-cover.png` | Stripe, Gumroad, social |
-| Dispute Vault cover | `images/products/ruby-dispute-vault-cover.png` | Stripe, Gumroad, social |
-| Credit Stacker cover | `images/products/ruby-credit-stacker-cover.png` | Stripe, Gumroad, social |
+| Starter Pack cover | `images/products/ruby-starter-pack-cover.png` | Future commerce, social |
+| Dispute Vault cover | `images/products/ruby-dispute-vault-cover.png` | Future commerce, social |
+| Credit Stacker cover | `images/products/ruby-credit-stacker-cover.png` | Future commerce, social |
 
 ---
 

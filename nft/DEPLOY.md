@@ -1,4 +1,6 @@
-# Ruby Dispute Vault Pass — Base network deploy guide
+# Ruby Dispute Vault Pass — future deployment guide
+
+> **NOT DEPLOYED OR VERIFIED:** Retained planning material only. Do not execute this guide or represent any contract, collection, price, supply, benefit, or purchase rail as live. Customer surfaces remain Coming Soon at `royalruby.io`.
 
 End-to-end: from zero to minted NFT + listed on OpenSea. ~45 min the first time, 5 min for every drop after that.
 
@@ -154,7 +156,7 @@ The PDF is what buyers actually want. The NFT is the delivery + community key.
 
 | Buyer type | Rail | What happens |
 |---|---|---|
-| Fiat / cautious | Stripe Payment Link | Pays $47, immediate download link on confirmation page |
+| Fiat / cautious | Future approved checkout rail | Disabled pending provider and fulfillment verification |
 | Creator / affiliate | Gumroad | Pays $47, Gumroad delivers, affiliate gets 30% |
 | Crypto-native | OpenSea / Base mint | Mints pass ~$47 ETH, unlocks PDF + Diamond Kava club access |
 
