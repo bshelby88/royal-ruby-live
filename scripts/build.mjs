@@ -17,7 +17,7 @@ for (const entry of readdirSync(root, { withFileTypes: true })) {
 for (const special of ['_headers', '_redirects', 'robots.txt', 'sitemap.xml', 'vercel.json']) {
   if (existsSync(join(root, special))) cpSync(join(root, special), join(dist, special));
 }
-for (const directory of ['images']) {
+for (const directory of ['images', 'sage']) {
   if (existsSync(join(root, directory))) cpSync(join(root, directory), join(dist, directory), { recursive: true });
 }
 const wisdomDrops = join(root, 'nft', 'wisdom-drops');
