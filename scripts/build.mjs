@@ -14,9 +14,10 @@ for (const entry of readdirSync(root, { withFileTypes: true })) {
     cpSync(join(root, entry.name), join(dist, entry.name));
   }
 }
-for (const special of ['_headers', '_redirects', 'robots.txt', 'sitemap.xml', 'vercel.json']) {
+for (const special of ['_headers', '_redirects', 'robots.txt', 'sitemap.xml', 'vercel.json', 'llms.txt', 'pricing.md']) {
   if (existsSync(join(root, special))) cpSync(join(root, special), join(dist, special));
 }
+if (existsSync(join(root, '.well-known'))) cpSync(join(root, '.well-known'), join(dist, '.well-known'), { recursive: true });
 for (const directory of ['images', 'sage']) {
   if (existsSync(join(root, directory))) cpSync(join(root, directory), join(dist, directory), { recursive: true });
 }
