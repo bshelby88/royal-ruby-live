@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /thanks
 Disallow: /thanks.html
-Disallow: /checklist.html
 
 Sitemap: https://royalruby.io/sitemap.xml

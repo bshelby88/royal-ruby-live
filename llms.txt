@@ -1,0 +1,33 @@
+# Royal Ruby x402
+
+> Pay $0.25 USDC, get structured US consumer-rights law citation research (FCRA, FDCPA, TILA, state UDAP, reporting timelines, statute of limitations).
+
+- Paid endpoint: POST https://royal-ruby-x402.fly.dev/api/law-lookup
+- Current configured price: $0.25 USDC per request
+- Payment network: Base mainnet (eip155:8453), USDC via x402
+- Intended users: paralegals, journalists, consumer-rights AI agents, dispute-letter drafting bots
+- x402 manifest: https://royal-ruby-x402.fly.dev/.well-known/x402.json
+- OpenAPI: https://royal-ruby-x402.fly.dev/openapi.json
+- Health: https://royal-ruby-x402.fly.dev/health
+- Free sample: https://royal-ruby-x402.fly.dev/sample
+- Note: informational only, not legal advice; verify citations independently.
+
+## More RAEN services (live catalog)
+
+All prices are USDC on Base (eip155:8453) via x402; each service answers unpaid POSTs with a live 402 challenge that is authoritative.
+
+- suprapack — https://suprapack-x402.fly.dev — Find the right agent skill for a task — $0.03 USDC/Base
+- power-pack — https://power-pack-x402.fly.dev — Cold-email deliverability and reply-rate scoring — $0.01 USDC/Base
+- vault-pro — https://vault-pro-x402.fly.dev — Scaffold Obsidian-ready project and agent vault templates — $0.05 USDC/Base
+- tradingagents — https://tradingagents-x402.fly.dev — Multi-analyst consensus + arbitrage signals from a ticker — $0.05 USDC/Base
+- nft-alpha — https://nft-alpha-x402.fly.dev — Real-time OpenSea market-signal metrics for a collection — $0.02 USDC/Base
+- lingua — https://lingua-x402.fly.dev — Translation, localization, and batch translate (from $1.00) — $1.00 USDC/Base
+- nanobanana — https://nanobanana-x402.fly.dev — AI image generation from a prompt — $0.01 USDC/Base
+- escrow — https://escrow-x402.fly.dev — x402 agent-to-agent escrow deal creation — $0.05 USDC/Base
+- royal-feel — https://royal-feel-x402.fly.dev — FTC-compliance copy linting + rewrite (from $2.00) — $2.00 USDC/Base
+- dispatch — https://dispatch-x402.fly.dev — Agent task dispatch with fulfillment tracking — $0.50 USDC/Base
+- contract-eye — https://contract-eye-x402.fly.dev — Contract risk-clause analysis (text or address) — $0.05 USDC/Base
+- briefsnap — https://briefsnap-x402.fly.dev — Summarize / extract-actions / ELI5 / compare docs (from $1.00) — $1.00 USDC/Base
+- dispute-forge — https://dispute-forge-x402.fly.dev — FCRA-compliant dispute letter pack generation — $0.75 USDC/Base
+- sentry-forge — https://sentry-forge-x402.fly.dev — Debt-dispute forensics pack generation — $5.00 USDC/Base
+- opensea-data — https://opensea-data-x402.fly.dev — OpenSea floor / listings / offers / traits for any collection slug — $0.01 USDC/Base
