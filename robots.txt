@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /thanks
-Disallow: /thanks.html
 
 Sitemap: https://royalruby.io/sitemap.xml
